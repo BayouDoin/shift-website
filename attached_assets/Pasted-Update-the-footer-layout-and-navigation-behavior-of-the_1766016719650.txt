@@ -1,0 +1,135 @@
+Update the footer layout and navigation behavior of the Shift website to improve visual hierarchy, trust, and clarity, and to intentionally route “Contact” to the Book a Call (AI Strategy Call) experience.
+
+Do not change site copy unless explicitly instructed below.
+Do not redesign other sections of the site.
+
+⸻
+
+1. Remove the Floating Reassurance Line Above the Footer
+
+Remove the standalone line that appears above the footer:
+
+“No pressure. No sales pitch. Just clarity.”
+
+This line should no longer appear as a separate banner or divider.
+
+⸻
+
+2. Add a Centered Reassurance Line INSIDE the Footer
+
+At the top of the footer, add the following line, centered horizontally:
+
+Clarity-first AI systems. No pressure. No long-term commitments.
+
+Styling guidance:
+	•	Slightly larger than footer body text
+	•	Muted contrast, not bright white
+	•	Light font weight
+	•	Increased letter spacing
+	•	Add vertical spacing below to separate it from footer content
+
+This line should visually anchor the footer.
+
+⸻
+
+3. Change Footer Layout to a Constrained 2-Column Structure
+
+Replace the current wide 3-column layout with a 2-column layout inside the site’s standard max-width container.
+
+⸻
+
+Left Column — Brand Anchor
+
+Replace the standalone “SHIFT” treatment with a stacked block:
+
+SHIFT
+Enterprise-grade AI that removes friction from everyday work.
+
+Styling guidance:
+	•	“SHIFT” remains bold and prominent
+	•	Tagline appears directly below in smaller, muted text
+	•	Left-aligned
+	•	Acts as the visual anchor of the footer
+
+⸻
+
+Right Column — Navigation + Social (Stacked)
+
+Create a tight vertical stack with two sections:
+
+Explore
+	•	Services
+	•	Results
+	•	How It Works
+	•	Contact (Book a Call)
+
+Connect
+	•	LinkedIn
+	•	Upwork
+
+Styling guidance:
+	•	Section labels slightly bolder than links
+	•	Links stacked vertically
+	•	Reduce horizontal spacing between brand and links
+	•	Do not spread content across the full width
+
+⸻
+
+4. Route “Contact” to the Book a Call Experience
+
+Update navigation behavior so that:
+	•	Clicking Contact opens the same flow as Book a Call
+	•	This may be a Calendly modal, booking page, or embedded scheduling flow
+	•	No separate contact form page should exist
+
+This behavior should also apply to:
+	•	Footer “Contact”
+	•	Header “Contact” (if present)
+
+⸻
+
+4a. Booking Flow Microcopy (Important)
+
+To avoid confusion or pressure, add the following subtle line inside the booking experience, beneath the main booking header or form:
+
+Prefer email? Start here and we’ll follow up if a call isn’t the right next step.
+
+This line should be visually subtle and reassuring.
+
+⸻
+
+5. Width, Spacing, and Alignment Adjustments
+	•	Constrain footer content to the same max-width used across the site
+	•	Increase vertical padding slightly
+	•	Reduce excessive horizontal whitespace
+	•	Keep layout calm, centered, and intentional
+
+⸻
+
+6. Copyright Placement
+
+At the very bottom of the footer, centered and small:
+
+© 2025 Shift. All rights reserved.
+
+No additional copy should appear below this line.
+
+⸻
+
+Design Constraints
+	•	Do not add animations
+	•	Do not introduce new colors or fonts
+	•	Do not add new links or CTAs
+	•	Do not add a generic contact form
+	•	Maintain the dark, minimal aesthetic
+	•	Footer should feel reassuring, intentional, and calm
+
+⸻
+
+Completion Criteria
+
+When complete:
+	•	“Contact” clearly means “start a conversation”
+	•	The footer visually closes the page with trust and clarity
+	•	No pressure or sales framing is introduced
+	•	Navigation behavior matches the site’s consultative positioning

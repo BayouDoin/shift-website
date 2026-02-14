@@ -1,0 +1,81 @@
+Apply minor visual refinements to the existing Shift website footer to improve balance, hierarchy, and finish.
+Do not change layout structure or copy unless specified below.
+
+⸻
+
+1. Adjust Reassurance Line Spacing
+
+Target the footer line:
+
+Clarity-first AI systems. No pressure. No long-term commitments.
+
+Make the following adjustments:
+	•	Add slightly more padding above this line
+	•	Reduce padding below it
+	•	Ensure it reads as a header within the footer, not a banner
+
+Do not change text size or wording.
+
+⸻
+
+2. Balance Left and Right Column Visual Weight
+
+Left Column (Brand)
+	•	Slightly reduce the font size or opacity of the tagline:
+Enterprise-grade AI that removes friction from everyday work.
+	•	Keep “SHIFT” unchanged in size and weight
+
+Goal: reduce visual dominance without weakening brand presence.
+
+⸻
+
+Right Column (Explore / Connect)
+	•	Increase font weight of the section labels:
+	•	Explore
+	•	Connect
+	•	Keep link text unchanged in size and weight
+
+Goal: better visual balance with the left column.
+
+⸻
+
+3. Tighten Link Vertical Spacing
+
+For both the Explore and Connect lists:
+	•	Reduce vertical spacing between links slightly
+	•	Ensure links read as a compact list rather than separate blocks
+	•	Maintain readability and clickability
+
+Do not change link order or destinations.
+
+⸻
+
+4. Refine Social Link Alignment
+
+For LinkedIn and Upwork links:
+	•	Slightly reduce icon size
+	•	Decrease spacing between icon and label text
+	•	Align icon + text vertically with the link rhythm of the Explore list
+
+Icons should feel like navigation elements, not decorative accents.
+
+⸻
+
+5. Preserve Overall Aesthetic
+
+Constraints:
+	•	Do not add new colors
+	•	Do not change fonts
+	•	Do not add animations
+	•	Do not add new content or links
+	•	Maintain the dark, minimal, calm aesthetic
+
+⸻
+
+Completion Criteria
+
+When finished, the footer should:
+	•	Feel visually balanced left to right
+	•	Feel calmer and more compact vertically
+	•	Clearly anchor trust at the end of the page
+	•	Look finished, intentional, and restrained

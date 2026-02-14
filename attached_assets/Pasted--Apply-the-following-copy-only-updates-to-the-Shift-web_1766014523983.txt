@@ -1,0 +1,141 @@
+
+Apply the following copy-only updates to the Shift website to improve emotional consistency, clarity, and tone.
+Do not redesign the page, change layout, or modify any other sections not listed below.
+
+⸻
+
+1. Update the Hero 1–2–3 Section (Directly Under Hero CTAs)
+
+Replace the existing three-step copy:
+
+Current
+	1.	Identify
+Your biggest time and revenue leaks
+	2.	Design
+A custom automation plan
+	3.	Implement
+Only what pays for itself
+
+Replace with:
+
+1. Identify
+Where work feels heavier than it should
+
+2. Design
+A clear, realistic path to remove that friction
+
+3. Implement
+Only what actually pays for itself
+
+Keep numbering, spacing, and layout the same.
+
+⸻
+
+2. Results Section — Remove “Workflow” Language
+
+In the Cisco case study, update the “What Was Built” description.
+
+Replace:
+
+Automated outbound and follow-up systems tied directly into sales workflows.
+
+With:
+
+Automated outbound and follow-up systems tied directly into how sales teams operate.
+
+Do not use the word “workflow” anywhere in the Results section.
+
+⸻
+
+3. Results Section — Improve Interpretive Line Tone
+
+For all interpretive lines added after each Outcome, replace sentences that begin with “This…” with language that anchors to lived experience.
+
+Apply this pattern consistently:
+
+Cisco
+Replace:
+
+This removed constant follow-up pressure and made execution more predictable across the sales process.
+
+With:
+
+The result was less follow-up pressure and more predictable execution across the sales process.
+
+⸻
+
+Intuit
+Replace:
+
+This reduced manual coordination and helped teams focus on higher-value work instead of chasing leads.
+
+With:
+
+The result was less manual coordination and more time spent on higher-value work instead of chasing leads.
+
+⸻
+
+Gate Gourmet
+Replace:
+
+This replaced manual oversight with systems that surfaced issues automatically instead of reactively.
+
+With:
+
+The result was less manual oversight and faster visibility into issues as they arose.
+
+⸻
+
+Local Law Firm
+Replace:
+
+This freed up staff time and reduced the mental load of managing intake and paperwork.
+
+With:
+
+The result was more available staff time and a lighter mental load around intake and paperwork.
+
+⸻
+
+4. CTA Button Copy (Optional Upgrade)
+
+If feasible without layout changes, update the primary CTA button text in the final section.
+
+Replace:
+
+See What We’d Automate in Your Business
+
+With:
+
+See What AI Should Take Over
+
+If this causes layout issues, keep the existing button text.
+
+⸻
+
+5. Footer Trust Line (Add One Line)
+
+Just above the copyright line in the footer, add this single sentence in small, subtle text:
+
+Clarity-first AI systems. No pressure. No long-term commitments.
+
+Do not add links or buttons to this line.
+
+⸻
+
+Copy Constraints
+	•	Do not add new services, tools, or claims
+	•	Do not introduce “workflow” language
+	•	Keep tone calm, human, and relief-focused
+	•	Maintain existing typography and spacing
+	•	No buzzwords or hype language
+
+⸻
+
+Completion Criteria
+
+After these changes:
+	•	All sections reinforce “less friction” and emotional relief
+	•	No reintroduction of consulting or automation jargon
+	•	Results feel transferable and validating
+	•	CTAs feel safe and low-pressure

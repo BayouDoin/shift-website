@@ -1,0 +1,122 @@
+Update the existing Shift Systems website with the following changes. Do not redesign the entire site. Preserve the current layout, styling, and components unless explicitly noted.
+
+⸻
+
+1. Rename the section
+
+Change the section title from:
+
+“Proven Results”
+
+to:
+
+“Results From Real Implementations”
+
+Add this line directly beneath the section title:
+
+These are examples of where automation produced measurable impact, not just efficiency.
+
+⸻
+
+2. Replace the existing case study cards with structured stories
+
+For each case, use the following structure and keep it visually scannable:
+	•	Company name as the primary heading
+	•	Four labeled rows:
+	•	Context
+	•	What Was Broken
+	•	What Was Built
+	•	Outcome
+
+Maintain consistent spacing and typography across all cases.
+
+⸻
+
+3. Case study content (use verbatim)
+
+Cisco
+Context
+Enterprise sales teams relying on manual outbound and inconsistent follow-up.
+
+What Was Broken
+Leads were generated, but follow-up was inconsistent and heavily manual.
+
+What Was Built
+Automated outbound and follow-up systems tied directly into sales workflows.
+
+Outcome
+Generated over $5M in attributable pipeline.
+
+⸻
+
+Intuit
+Context
+High-volume inbound and outbound sales workflows across multiple product lines.
+
+What Was Broken
+Fragmented lead follow-up and manual sales processes slowed conversion.
+
+What Was Built
+Automated outbound, lead routing, and follow-up systems.
+
+Outcome
+Generated over $1M in attributable revenue.
+
+⸻
+
+Gate Gourmet
+Context
+Operations spanning dozens of airports with high monitoring overhead.
+
+What Was Broken
+Manual monitoring across locations created cost and reliability issues.
+
+What Was Built
+Automated IoT monitoring and alerting workflows.
+
+Outcome
+Saved over $1M annually across 50+ airports.
+
+⸻
+
+Riney Law Firm
+Context
+Estate planning firm handling high volumes of client intake and document preparation.
+
+What Was Broken
+Manual intake, document assembly, and follow-up consumed staff time and slowed turnaround.
+
+What Was Built
+Automated client intake, document generation, and internal workflows.
+
+Outcome
+Saved 30+ hours per month and significantly reduced administrative overhead.
+
+⸻
+
+4. Ordering
+
+Display the case studies in this order:
+	1.	Cisco
+	2.	Intuit
+	3.	Gate Gourmet
+	4.	Riney Law Firm
+
+⸻
+
+5. Add a subtle takeaway line at the bottom of the section
+
+Add this single line below the case studies, smaller and lighter than body text:
+
+In most engagements, the first automation pays for itself within weeks.
+
+Do not add a CTA inside this section.
+
+⸻
+
+6. Constraints
+	•	Do not add testimonials or quotes
+	•	Do not exaggerate claims
+	•	Do not imply formal partnerships or endorsements
+	•	Keep tone factual, calm, and professional
+	•	Match the existing dark theme and typography

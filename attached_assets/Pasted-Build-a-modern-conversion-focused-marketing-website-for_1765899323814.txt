@@ -1,0 +1,228 @@
+Build a modern, conversion-focused marketing website for an automation consultancy called Shift Systems.
+
+⸻
+
+Overall Intent
+
+The site should feel slightly agency-styled but still founder-led, without centering on a personal brand. It should position Shift Systems as a serious systems partner trusted by large organizations and built for small and medium-sized businesses.
+
+Primary goals:
+	•	Convert warm traffic from referrals
+	•	Support cold outbound credibility
+	•	Act as a trust anchor for Upwork prospects
+	•	Keep pricing consultative only
+
+⸻
+
+Tech Requirements
+	•	Next.js (App Router) with TypeScript
+	•	Tailwind CSS
+	•	Mobile-first responsive design
+	•	Fast load times and SEO optimized
+	•	Clean, minimal, professional aesthetic
+	•	Subtle hover and transition effects only
+
+⸻
+
+Brand & Positioning
+
+Shift Systems builds enterprise-grade automation for small and medium-sized businesses.
+
+Target audience:
+	•	SMBs doing roughly $500k to $10M in revenue
+	•	Small teams with manual sales and operational drag
+	•	Founders and operators overwhelmed by follow-up and fragmented systems
+
+Tone:
+	•	Confident, strategic, calm
+	•	Outcome-focused
+	•	Avoid unnecessary technical jargon
+
+⸻
+
+Page Structure & Content
+
+⸻
+
+HERO SECTION
+
+Headline:
+Enterprise-Grade Automation Built for Small Teams That Want to Grow
+
+Subheadline:
+We design and implement the same automation systems used by large organizations so small and medium-sized businesses can scale revenue and operations without hiring or burning out.
+
+Qualifier line:
+Best for small and medium-sized businesses doing $500k to $10M in revenue.
+
+Primary CTA:
+See What We’d Automate in Your Business
+
+Secondary CTA:
+View Real Automation Examples
+
+3-step micro process under CTAs:
+	1.	Identify your biggest time and revenue leaks
+	2.	Design a custom automation plan
+	3.	Implement only what pays for itself
+
+Right-side element:
+Video placeholder labeled
+“60-second overview of how Shift Systems works”
+
+⸻
+
+TRUST & LOGOS SECTION (High on Page)
+
+Heading:
+Trusted by teams at leading organizations and growing SMBs
+
+Display logos in a clean, desaturated grid:
+	•	Cisco
+	•	AT&T
+	•	JP Morgan
+	•	Intuit
+	•	Penn Mutual
+	•	Gate Gourmet
+	•	Russell Stover
+	•	Michelin Tires
+	•	YMCA
+	•	Chobani
+
+Logos should feel editorial and understated, not promotional.
+
+⸻
+
+WHAT WE BUILD (OUTCOME-BASED)
+
+Revenue Systems
+Automations that turn leads into conversations and conversations into deals without manual follow-up.
+
+Includes:
+	•	Lead reactivation
+	•	Automated email outreach
+	•	Sales handoff automation
+
+Outcome:
+Typical result: 5–15 hours saved per week within 30 days
+
+⸻
+
+Operations Systems
+Automations that eliminate repetitive internal work and reduce operational drag.
+
+Includes:
+	•	Intake to document workflows
+	•	Internal workflow automation
+	•	Multi-step form systems
+
+Outcome:
+Typical result: Faster turnaround times and fewer errors
+
+⸻
+
+Customer Experience Systems
+Automations that improve response time and client experience without adding headcount.
+
+Includes:
+	•	Appointment and booking automation
+	•	Client onboarding workflows
+	•	Status notifications and updates
+
+Outcome:
+Typical result: Near-instant response times without manual work
+
+⸻
+
+Data & Cleanup Systems
+Automations that clean, connect, and stabilize existing tools.
+
+Includes:
+	•	CRM cleanup and optimization
+	•	Zapier, Make, and n8n automation
+	•	Tool consolidation
+
+Outcome:
+Typical result: Cleaner systems and fewer failures
+
+⸻
+
+PROVEN RESULTS (MICRO CASE STUDIES)
+
+Cisco
+Before: Manual outbound and inconsistent follow-up
+After: Automated outbound systems
+Result: Generated $5M+ in pipeline
+
+Intuit
+Before: Fragmented lead follow-up and manual sales workflows
+After: Automated outbound and lead management systems
+Result: Generated $1M+ in revenue
+
+Gate Gourmet
+Before: Manual monitoring across dozens of locations
+After: Automated IoT monitoring workflows
+Result: Saved $1M+ annually across 50+ airports
+
+SMB Client
+Before: Leads falling through the cracks
+After: Automated intake and follow-up
+Result: 10x faster response time
+
+⸻
+
+HOW THE ENGAGEMENT WORKS
+	•	Start with a 20-minute workflow review
+	•	Identify the highest-impact automation opportunities
+	•	Implement systems that pay for themselves quickly
+
+Reassurance bullets:
+	•	No prep required
+	•	No obligation
+	•	Clear next steps after the call
+
+⸻
+
+BOTTOM CTA SECTION
+
+Headline:
+If You Are Spending Hours Each Week on Manual Sales or Operations Work, This Is the Fastest Way to Fix It
+
+Primary CTA:
+See What We’d Automate in Your Business
+
+Supporting text:
+20 minute call. No prep required. You leave with a clear automation plan.
+
+Qualifier:
+Best for small and medium-sized businesses with small teams and messy systems.
+
+⸻
+
+FOOTER
+
+Include:
+	•	Short brand statement
+	•	Contact link
+	•	LinkedIn and Upwork links
+	•	Copyright notice
+
+⸻
+
+DESIGN GUIDELINES
+	•	Neutral or dark background
+	•	Strong contrast and typography hierarchy
+	•	Generous whitespace
+	•	No stock photography
+	•	Use icons and layout for visual interest
+	•	Buttons should be visually intentional and calm
+
+⸻
+
+STRATEGIC NOTE FOR REPLIT
+
+The site should be easy to extend later with:
+	•	A Use Cases page
+	•	Case studies page
+	•	Productized offers
+	•	Blog or insights section

@@ -1,0 +1,124 @@
+REPLIT PROMPT — TWO-STEP LEAD CAPTURE + CALL BOOKING FLOW
+
+Update the existing Shift Systems website so that all primary CTAs trigger a two-step modal flow:
+
+Step 1 collects contact information.
+Step 2 allows the visitor to book a call.
+
+Do not redesign the site. Integrate cleanly into the existing UI and brand.
+
+⸻
+
+1. CTA BEHAVIOR
+
+Update the following buttons so they all trigger the same flow:
+	•	“Book a Call”
+	•	“See What We’d Automate in Your Business”
+
+Clicking any of these should open a modal dialog.
+
+⸻
+
+2. MODAL — STEP 1: CONTACT INFO (FIRST SCREEN)
+
+This must be the first thing shown when the modal opens.
+
+Form fields
+	•	Full Name (required)
+	•	Email Address (required)
+
+Primary button
+
+Continue
+
+Supporting text (small, subtle)
+
+No spam. No sales pressure. Just a quick workflow review.
+
+Behavior
+	•	Validate both fields before continuing
+	•	Store name and email in local state
+	•	Do NOT allow skipping this step
+	•	On submit, transition to Step 2 without page reloadict
+
+⸻
+
+3. MODAL — STEP 2: BOOK A CALL (SECOND SCREEN)
+
+After Step 1 submission, replace modal content with a scheduling view.
+
+Header
+
+Schedule Your 20-Minute Workflow Review
+
+Subtext
+
+You’ll leave with a clear automation plan and next steps.
+
+Scheduling
+	•	Embed a Calendly scheduler inline using an iframe
+	•	Use a placeholder Calendly link that can be easily replaced
+	•	Pass name and email into Calendly if supported
+	•	Allow booking a 20-minute meeting
+
+Optional helper text (small)
+
+If now isn’t a good time, we’ll follow up by email.
+
+⸻
+
+4. UX REQUIREMENTS
+	•	Modal centered with dark overlay
+	•	Smooth transition between Step 1 and Step 2
+	•	Close button in top-right
+	•	Responsive on mobile
+	•	Keyboard accessible
+	•	Preserve page scroll on close
+
+⸻
+
+5. TECHNICAL REQUIREMENTS
+	•	Implement as a reusable Modal component
+	•	Use React state to manage steps
+	•	Do not require authentication
+	•	Do not add a backend unless already present
+	•	Calendly embed in its own component
+	•	Keep collected contact data in state for later use
+
+Optional but recommended:
+	•	Stub event hooks for:
+	•	CTA click
+	•	Step 1 submit
+	•	Calendly booking
+
+⸻
+
+6. COPY & COMPLIANCE CONSTRAINTS
+	•	No aggressive sales language
+	•	No pricing mentions
+	•	Do not imply obligation
+	•	Tone should be calm, consultative, and professional
+	•	Match existing typography and spacing
+	•	Do not auto-submit data to external services unless configured
+
+⸻
+
+7. COMPLETION CHECK
+
+When complete:
+	•	All primary CTAs open the modal
+	•	Step 1 (name + email) is mandatory
+	•	Step 2 (calendar booking) follows
+	•	Users can close at Step 2
+	•	You retain contact info even if they don’t book
+
+⸻
+
+OPERATOR NOTE (IMPORTANT)
+
+Structure this so later we can:
+	•	Send unbooked leads to email follow-up
+	•	Add UTM tracking
+	•	Route leads into CRM or automation workflows
+
+Do not implement those yet. Just architect for it.

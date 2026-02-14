@@ -1,0 +1,78 @@
+Update the existing “Results From Real Implementations” section to better align with the site’s “less friction, relief, and clarity” positioning.
+
+Do not change metrics, company names, or the overall layout. Only update section framing and add interpretive context as described below.
+
+⸻
+
+1. Section Title and Subheading
+
+Keep the section title:
+
+Results From Real Implementations
+
+Replace the existing subheading with:
+
+Different businesses, different challenges. The common thread is removing work that drains time, attention, and momentum.
+
+This line should appear directly under the section header.
+
+⸻
+
+2. Add an Interpretive Line to Each Case Study
+
+For each case study, after the Outcome, add a single, short interpretive sentence that explains what the result felt like in practice.
+
+These lines should be lighter in visual weight than the Outcome text.
+
+⸻
+
+Cisco — Add this line after the Outcome
+This removed constant follow-up pressure and made execution more predictable across the sales process.
+
+⸻
+
+Intuit — Add this line after the Outcome
+This reduced manual coordination and helped teams focus on higher-value work instead of chasing leads.
+
+⸻
+
+Gate Gourmet — Add this line after the Outcome
+This replaced manual oversight with systems that surfaced issues automatically instead of reactively.
+
+⸻
+
+Local Law Firm — Add this line after the Outcome
+This freed up staff time and reduced the mental load of managing intake and paperwork.
+
+⸻
+
+3. Bottom Anchoring Takeaway (Replace Existing Line)
+
+Replace the current bottom line:
+
+In most engagements, the first automation pays for itself within weeks.
+
+With:
+
+Across industries, the pattern is the same: remove the draining work, and everything else moves faster.
+
+This line should feel reflective, not sales-oriented.
+
+⸻
+
+4. Copy Constraints
+	•	Do not introduce new metrics or claims
+	•	Do not change the “Context / What Was Broken / What Was Built / Outcome” structure
+	•	Avoid the word “automation” in new lines unless already present
+	•	Keep tone calm, human, and validating
+	•	Match existing typography and spacing
+
+⸻
+
+Completion Criteria
+
+When finished, this section should:
+	•	Still clearly establish credibility
+	•	Help readers see themselves in the outcomes
+	•	Reinforce the emotional promise of relief and clarity
+	•	Feel consistent with the hero and CTA messaging

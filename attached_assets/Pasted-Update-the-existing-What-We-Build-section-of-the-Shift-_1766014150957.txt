@@ -1,0 +1,127 @@
+Update the existing “What We Build” section of the Shift website to better reflect a clarity-first, friction-removal positioning.
+
+Do not redesign the page or modify other sections. Only update copy, labels, and section headings as described below.
+
+⸻
+
+1. Rename the Section
+
+Replace the section title:
+
+What We Build
+
+With:
+
+Where AI Removes Friction
+
+⸻
+
+2. Replace the Section Subheading
+
+Replace the current subheading text with:
+
+These are the areas where AI most often removes tedious, draining work and makes day-to-day operations feel lighter.
+
+⸻
+
+3. Rewrite Category Content
+
+Keep the existing four category blocks and layout. Update only the text inside each block as follows.
+
+⸻
+
+Revenue Systems
+Replace the description with:
+
+Remove the manual work that makes sales feel heavier than it should.
+
+AI systems that handle follow-up, coordination, and handoffs so opportunities don’t stall or slip through the cracks.
+
+Keep the “Includes” list unchanged:
+	•	Lead reactivation
+	•	Automated email outreach
+	•	Sales handoff automation
+
+Keep the result line unchanged:
+
+Typical result: 5–15 hours saved per week within 30 days
+
+⸻
+
+Operations Systems
+Replace the description with:
+
+Eliminate repetitive internal work that quietly drains time and attention.
+
+AI systems that take ownership of routine operational tasks so work doesn’t get stuck in inboxes or spreadsheets.
+
+Keep the “Includes” list unchanged:
+	•	Intake to document workflows
+	•	Internal workflow automation
+	•	Multi-step form systems
+
+Keep the result line unchanged:
+
+Typical result: Faster turnaround times and fewer errors
+
+⸻
+
+Customer Experience Systems
+Replace the description with:
+
+Remove the friction that slows responses and creates unnecessary back-and-forth.
+
+AI systems that keep customers informed, moving, and supported without constant manual intervention.
+
+Keep the “Includes” list unchanged:
+	•	Appointment and booking automation
+	•	Client onboarding workflows
+	•	Status notifications and updates
+
+Keep the result line unchanged:
+
+Typical result: Near-instant response times without manual work
+
+⸻
+
+Data & Cleanup Systems
+Replace the description with:
+
+Clear the clutter that makes systems feel fragile or unreliable.
+
+AI systems that clean, connect, and stabilize the tools your business already relies on.
+
+Keep the “Includes” list unchanged:
+	•	CRM cleanup and optimization
+	•	Zapier, Make, and n8n automation
+	•	Tool consolidation
+
+Keep the result line unchanged:
+
+Typical result: Cleaner systems and fewer failures
+
+⸻
+
+4. Optional Line at Bottom of Section (Recommended)
+
+Add the following single sentence at the bottom of the section, styled subtly and smaller than body text:
+
+Most teams start with one area that’s causing the most friction and expand from there.
+
+⸻
+
+5. Copy Constraints
+	•	Do not introduce new services or tools
+	•	Do not remove any existing categories
+	•	Do not use the word “workflow” in new copy
+	•	Keep tone calm, human, and outcome-focused
+	•	Match existing typography and spacing
+
+⸻
+
+Completion Criteria
+
+When complete, this section should:
+	•	Feel emotionally aligned with “less friction” and “relief” messaging
+	•	Read as impact-focused, not service-menu-driven
+	•	Preserve full breadth without narrowing positioning

@@ -1,0 +1,99 @@
+Update the existing “How the Engagement Works” section of the Shift website to better align with AI-curious businesses that may not yet have defined workflows.
+
+Do not redesign the page or alter other sections. Only update copy and labels in this section.
+
+⸻
+
+1. Section Header and Subheader
+
+Keep the section title:
+
+How the Engagement Works
+
+Replace the existing subheader with:
+
+Designed to help you make sense of where AI fits, without overcommitting or overengineering.
+
+⸻
+
+2. Step 1 — Rename and Rewrite
+
+Replace:
+
+Start with a 20-minute workflow review
+
+With:
+
+Start with an AI Strategy Call
+
+Replace the description text with:
+
+A short conversation to understand how your business operates today and where work feels heavier than it should.
+
+⸻
+
+3. Step 2 — Reframe Language
+
+Keep the step number and structure, but update the title and description.
+
+Replace the step title with:
+
+Identify where AI can take work off your plate
+
+Replace the description with:
+
+We identify repetitive, tedious, or draining work that AI can realistically own or support.
+
+⸻
+
+4. Step 3 — Soften Implementation Framing
+
+Replace the step title with:
+
+Design what makes sense to implement first
+
+Replace the description with:
+
+We outline a clear, realistic path forward focused on removing friction and delivering quick wins.
+
+⸻
+
+5. Supporting Bullets (Keep These)
+
+Do not change the following bullets. Keep them as-is:
+	•	No prep required
+	•	No obligation
+	•	Clear next steps after the call
+
+⸻
+
+6. CTA Supporting Text (Important Fix)
+
+Replace:
+
+You leave with a clear automation plan.
+
+With:
+
+You leave with clarity on what AI should take over and what to do next.
+
+This text should appear directly below the CTA button.
+
+⸻
+
+7. Copy Constraints
+	•	Do not use the word “workflow” anywhere in this section
+	•	Do not imply existing systems must already be in place
+	•	Do not add technical jargon
+	•	Keep tone calm, consultative, and clarity-focused
+	•	Match existing typography, spacing, and layout
+
+⸻
+
+Completion Criteria
+
+When finished, this section should:
+	•	Feel safe and welcoming to AI-curious businesses
+	•	Emphasize clarity over critique
+	•	Align emotionally with the “tasks you dread” CTA
+	•	Avoid assumptions about workflow maturity
