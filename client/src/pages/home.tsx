@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import TrustLogos from "@/components/landing/TrustLogos";
@@ -11,6 +11,13 @@ import BookingModal from "@/components/landing/BookingModal";
 
 export default function Home() {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("book") === "true") {
+      setBookingModalOpen(true);
+    }
+  }, []);
 
   const openBookingModal = () => setBookingModalOpen(true);
 
