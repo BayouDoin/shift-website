@@ -24,6 +24,10 @@ const BEST_PMS_SETUP_PATH = "/law-firms/best-practice-management-software-setup-
 const SOFTWARE_IMPLEMENTATION_PATH = "/law-firms/law-firm-software-implementation-consultant/";
 const PMS_CLEANUP_PATH = "/law-firms/practice-management-software-cleanup/";
 const LEGAL_CRM_SETUP_PATH = "/law-firms/legal-crm-setup-help/";
+const NORTH_CAROLINA_PATH = "/law-firms/north-carolina-law-firm-software-setup-help/";
+const SOUTH_CAROLINA_PATH = "/law-firms/south-carolina-law-firm-software-setup-help/";
+const TENNESSEE_PATH = "/law-firms/tennessee-law-firm-software-setup-help/";
+const VIRGINIA_PATH = "/law-firms/virginia-law-firm-software-setup-help/";
 
 type Section = {
   heading: string;
@@ -79,7 +83,11 @@ type PageKey =
   | "bestPmsSetup"
   | "softwareImplementation"
   | "pmsCleanup"
-  | "legalCrmSetup";
+  | "legalCrmSetup"
+  | "northCarolina"
+  | "southCarolina"
+  | "tennessee"
+  | "virginia";
 
 const sharedFaqs: Faq[] = [
   {
@@ -170,6 +178,10 @@ function makeSoftwareSetupPage(tool: string, toolPath: string, detail: string): 
       { label: "Law Firm Intake Automation", href: INTAKE_AUTOMATION_PATH },
       { label: "Law Firm Document Automation", href: DOCUMENT_AUTOMATION_PATH },
       { label: "Legal CRM Setup Help", href: LEGAL_CRM_SETUP_PATH },
+      { label: "North Carolina Law Firm Software Setup Help", href: NORTH_CAROLINA_PATH },
+      { label: "South Carolina Law Firm Software Setup Help", href: SOUTH_CAROLINA_PATH },
+      { label: "Tennessee Law Firm Software Setup Help", href: TENNESSEE_PATH },
+      { label: "Virginia Law Firm Software Setup Help", href: VIRGINIA_PATH },
     ],
     faqs: [
       {
@@ -252,7 +264,85 @@ function makeProblemPage(options: {
   };
 }
 
+function makeStatePage(state: string, shortState: string): PageData {
+  return {
+    title: `${state} Law Firm Software Setup Help | SHIFT Systems`,
+    description: `Get law firm software setup help for small firms in ${state}. Review intake, follow-up, documents, reminders, staff handoffs, and practice management cleanup.`,
+    eyebrow: `${state} law firm software setup help`,
+    h1: `${state} Law Firm Software Setup Help`,
+    intro: `For small law firms in ${state} using PracticePanther, Clio, MyCase, Lawmatics, Smokeball, Actionstep, or similar tools, but still losing time to messy intake, manual follow-up, document prep, or unclear staff handoffs.`,
+    support: `SHIFT helps ${shortState} firms review how the current setup actually supports daily work, then identify the first cleanup priority before making bigger software decisions.`,
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: HUB_PATH,
+    secondaryText: "See law firm setup help",
+    sections: [
+      {
+        heading: `Where ${state} firms usually feel the friction`,
+        body: [
+          "The software may already be in place, but the work still depends on memory, manual checking, and one-off staff habits.",
+        ],
+        bullets: [
+          "New inquiries arrive, but the next step is not always clear.",
+          "Consult follow-up depends on someone remembering to check back.",
+          "Matter details are entered inconsistently or in too many places.",
+          "Document preparation still requires repeated copying and checking.",
+          "Tasks and reminders exist, but the team does not fully trust them.",
+          "The firm is unsure whether it needs new software or cleanup inside the current setup.",
+        ],
+      },
+      {
+        heading: "What the setup audit reviews",
+        bullets: [
+          "Lead and client intake steps.",
+          "Matter setup and required information.",
+          "Follow-up after forms, calls, consults, and missing documents.",
+          "Task, reminder, and handoff points between staff.",
+          "Document preparation touchpoints.",
+          "Fields, statuses, or steps that confuse the team.",
+          "The smallest cleanup move that would reduce the most repeated work first.",
+        ],
+      },
+      {
+        heading: "Why start with cleanup instead of a bigger rebuild",
+        body: [
+          "A bigger software change can be useful later, but only after the firm understands what is actually breaking today.",
+          "The audit is meant to separate software problems from setup problems, then turn the next step into a plain-English priority.",
+        ],
+      },
+      {
+        heading: "Good fit",
+        bullets: [
+          `Your ${state} firm already uses law firm software, but the team still works around it.`,
+          "You want less manual follow-up and fewer unclear handoffs.",
+          "You need cleaner intake, matter details, document prep, or reminders.",
+          "You want to know what to fix first before buying or switching tools.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Book the setup audit", href: AUDIT_PATH },
+      { label: "Law Firm Software Setup Help", href: HUB_PATH },
+      { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
+      { label: "Clio Setup Help", href: CLIO_PATH },
+      { label: "MyCase Setup Help", href: MYCASE_PATH },
+      { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+    ],
+    faqs: [
+      {
+        question: `Do you only work with firms in ${state}?`,
+        answer: "No. These pages are for firms searching by region, but the audit is remote and focused on the firm's software setup and workflow.",
+      },
+      ...sharedFaqs,
+    ],
+  };
+}
+
 const pages: Record<PageKey, PageData> = {
+  northCarolina: makeStatePage("North Carolina", "NC"),
+  southCarolina: makeStatePage("South Carolina", "SC"),
+  tennessee: makeStatePage("Tennessee", "TN"),
+  virginia: makeStatePage("Virginia", "VA"),
   clio: makeSoftwareSetupPage(
     "Clio",
     CLIO_PATH,

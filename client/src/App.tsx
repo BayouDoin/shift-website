@@ -55,6 +55,14 @@ function Router() {
       <Route path="/law-firms/practice-management-software-cleanup/" component={() => <LawFirmsPage pageKey="pmsCleanup" />} />
       <Route path="/law-firms/legal-crm-setup-help" component={() => <LawFirmsPage pageKey="legalCrmSetup" />} />
       <Route path="/law-firms/legal-crm-setup-help/" component={() => <LawFirmsPage pageKey="legalCrmSetup" />} />
+      <Route path="/law-firms/north-carolina-law-firm-software-setup-help" component={() => <LawFirmsPage pageKey="northCarolina" />} />
+      <Route path="/law-firms/north-carolina-law-firm-software-setup-help/" component={() => <LawFirmsPage pageKey="northCarolina" />} />
+      <Route path="/law-firms/south-carolina-law-firm-software-setup-help" component={() => <LawFirmsPage pageKey="southCarolina" />} />
+      <Route path="/law-firms/south-carolina-law-firm-software-setup-help/" component={() => <LawFirmsPage pageKey="southCarolina" />} />
+      <Route path="/law-firms/tennessee-law-firm-software-setup-help" component={() => <LawFirmsPage pageKey="tennessee" />} />
+      <Route path="/law-firms/tennessee-law-firm-software-setup-help/" component={() => <LawFirmsPage pageKey="tennessee" />} />
+      <Route path="/law-firms/virginia-law-firm-software-setup-help" component={() => <LawFirmsPage pageKey="virginia" />} />
+      <Route path="/law-firms/virginia-law-firm-software-setup-help/" component={() => <LawFirmsPage pageKey="virginia" />} />
       <Route component={NotFound} />
     </Switch>
   );
