@@ -651,6 +651,17 @@ const pages: Record<PageKey, PageData> = {
         ],
       },
       {
+        heading: "PracticePanther cleanup pages",
+        description: "Use these pages when the firm is already using PracticePanther and wants help with a specific setup area.",
+        links: [
+          { label: "PracticePanther Workflow Cleanup", href: PP_WORKFLOW_CLEANUP_PATH },
+          { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
+          { label: "PracticePanther Document Automation", href: PP_DOCUMENT_AUTOMATION_PATH },
+          { label: "PracticePanther Custom Field Cleanup", href: PP_CUSTOM_FIELD_CLEANUP_PATH },
+          { label: "PracticePanther Setup Checklist", href: PP_SETUP_CHECKLIST_PATH },
+        ],
+      },
+      {
         heading: "Browse by region",
         description: "Use these pages when firms search by state but still need remote help cleaning up the same software problems.",
         links: [
