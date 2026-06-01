@@ -5,9 +5,10 @@ export default function CaseStudyCardExample() {
     <div className="max-w-md p-4">
       <CaseStudyCard
         company="Cisco"
-        before="Manual outbound and inconsistent follow-up"
-        after="Automated outbound systems"
-        result="Generated $5M+ in pipeline"
+        context="Sales team needed cleaner outbound and follow-up visibility."
+        whatWasBroken="Manual outbound and inconsistent follow-up."
+        whatWasBuilt="Automated outbound systems and clearer pipeline tracking."
+        outcome="Generated $5M+ in pipeline."
       />
     </div>
   );
