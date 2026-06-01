@@ -27,6 +27,16 @@ function Router() {
       <Route path="/law-firms/workflow-cleanup/" component={() => <LawFirmsPage pageKey="workflowCleanup" />} />
       <Route path="/law-firms/client-follow-up-system" component={() => <LawFirmsPage pageKey="clientFollowUp" />} />
       <Route path="/law-firms/client-follow-up-system/" component={() => <LawFirmsPage pageKey="clientFollowUp" />} />
+      <Route path="/law-firms/practicepanther-workflow-cleanup" component={() => <LawFirmsPage pageKey="practicePantherWorkflowCleanup" />} />
+      <Route path="/law-firms/practicepanther-workflow-cleanup/" component={() => <LawFirmsPage pageKey="practicePantherWorkflowCleanup" />} />
+      <Route path="/law-firms/practicepanther-intake-setup" component={() => <LawFirmsPage pageKey="practicePantherIntakeSetup" />} />
+      <Route path="/law-firms/practicepanther-intake-setup/" component={() => <LawFirmsPage pageKey="practicePantherIntakeSetup" />} />
+      <Route path="/law-firms/practicepanther-document-automation" component={() => <LawFirmsPage pageKey="practicePantherDocumentAutomation" />} />
+      <Route path="/law-firms/practicepanther-document-automation/" component={() => <LawFirmsPage pageKey="practicePantherDocumentAutomation" />} />
+      <Route path="/law-firms/practicepanther-custom-field-cleanup" component={() => <LawFirmsPage pageKey="practicePantherCustomFieldCleanup" />} />
+      <Route path="/law-firms/practicepanther-custom-field-cleanup/" component={() => <LawFirmsPage pageKey="practicePantherCustomFieldCleanup" />} />
+      <Route path="/law-firms/practicepanther-setup-checklist" component={() => <LawFirmsPage pageKey="practicePantherSetupChecklist" />} />
+      <Route path="/law-firms/practicepanther-setup-checklist/" component={() => <LawFirmsPage pageKey="practicePantherSetupChecklist" />} />
       <Route component={NotFound} />
     </Switch>
   );

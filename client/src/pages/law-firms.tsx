@@ -10,6 +10,11 @@ const INTAKE_AUTOMATION_PATH = "/law-firms/intake-automation/";
 const DOCUMENT_AUTOMATION_PATH = "/law-firms/document-automation/";
 const WORKFLOW_CLEANUP_PATH = "/law-firms/workflow-cleanup/";
 const CLIENT_FOLLOW_UP_PATH = "/law-firms/client-follow-up-system/";
+const PP_WORKFLOW_CLEANUP_PATH = "/law-firms/practicepanther-workflow-cleanup/";
+const PP_INTAKE_SETUP_PATH = "/law-firms/practicepanther-intake-setup/";
+const PP_DOCUMENT_AUTOMATION_PATH = "/law-firms/practicepanther-document-automation/";
+const PP_CUSTOM_FIELD_CLEANUP_PATH = "/law-firms/practicepanther-custom-field-cleanup/";
+const PP_SETUP_CHECKLIST_PATH = "/law-firms/practicepanther-setup-checklist/";
 
 type Section = {
   heading: string;
@@ -51,7 +56,12 @@ type PageKey =
   | "intakeAutomation"
   | "documentAutomation"
   | "workflowCleanup"
-  | "clientFollowUp";
+  | "clientFollowUp"
+  | "practicePantherWorkflowCleanup"
+  | "practicePantherIntakeSetup"
+  | "practicePantherDocumentAutomation"
+  | "practicePantherCustomFieldCleanup"
+  | "practicePantherSetupChecklist";
 
 const sharedFaqs: Faq[] = [
   {
@@ -345,6 +355,11 @@ const pages: Record<PageKey, PageData> = {
     related: [
       { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
       { label: "Law Firm Software Setup Help", href: HUB_PATH },
+      { label: "PracticePanther Workflow Cleanup", href: PP_WORKFLOW_CLEANUP_PATH },
+      { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
+      { label: "PracticePanther Document Automation", href: PP_DOCUMENT_AUTOMATION_PATH },
+      { label: "PracticePanther Custom Field Cleanup", href: PP_CUSTOM_FIELD_CLEANUP_PATH },
+      { label: "PracticePanther Setup Checklist", href: PP_SETUP_CHECKLIST_PATH },
     ],
     faqs: [
       {
@@ -777,6 +792,407 @@ const pages: Record<PageKey, PageData> = {
         question: "What is the first step?",
         answer:
           "Book the audit and bring the follow-up moments that worry you most.",
+      },
+    ],
+  },
+
+  practicePantherWorkflowCleanup: {
+    title: "PracticePanther Workflow Cleanup | SHIFT Systems",
+    description:
+      "PracticePanther workflow cleanup help for small law firms where daily work still happens outside the system.",
+    eyebrow: "PracticePanther workflow cleanup",
+    h1: "PracticePanther Workflow Cleanup",
+    intro:
+      "PracticePanther should support how the firm works, not become another place staff have to double-enter information.",
+    support:
+      "SHIFT helps small firms review where PracticePanther fits the real workflow, where staff work around it, and what cleanup would make the biggest difference first.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: PRACTICEPANTHER_PATH,
+    secondaryText: "PracticePanther setup help",
+    sections: [
+      {
+        heading: "When the system exists but the workflow still lives outside it",
+        body: [
+          "A firm can use PracticePanther every day and still rely on notes, inboxes, spreadsheets, or memory to move work forward.",
+          "That usually means the workflow is not clear enough inside the setup itself.",
+        ],
+      },
+      {
+        heading: "Common workflow cleanup signs",
+        bullets: [
+          "Staff create matters, but the next task is not obvious.",
+          "Follow-up is tracked outside PracticePanther.",
+          "Matter details are entered inconsistently.",
+          "People use different paths for the same kind of work.",
+          "Documents depend on manual checks before anyone trusts them.",
+          "The owner still has to ask where things stand.",
+        ],
+      },
+      {
+        heading: "What SHIFT reviews",
+        bullets: [
+          "How work enters PracticePanther.",
+          "How matters, tasks, reminders, and notes are used.",
+          "Where the team leaves the system to manage work manually.",
+          "Which handoffs create confusion.",
+          "What should be cleaned up before adding more complexity.",
+        ],
+      },
+      {
+        heading: "The goal is a setup staff can trust",
+        body: [
+          "Workflow cleanup should make PracticePanther easier to rely on. Staff should be able to see what happened, what is missing, and what comes next without asking around.",
+        ],
+      },
+    ],
+    related: [
+      { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+      { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
+      { label: "PracticePanther Custom Field Cleanup", href: PP_CUSTOM_FIELD_CLEANUP_PATH },
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+    ],
+    faqs: [
+      {
+        question: "Do we need to rebuild PracticePanther from scratch?",
+        answer:
+          "Not usually. The audit starts by finding the setup gaps that create the most daily friction.",
+      },
+      {
+        question: "Can this help if staff already use PracticePanther?",
+        answer:
+          "Yes. Daily use does not always mean the workflow is clean or consistent.",
+      },
+      {
+        question: "What if the workflow problem is staff behavior?",
+        answer:
+          "The audit looks at both setup and usage. Often inconsistent behavior is a sign that the system does not make the next step clear enough.",
+      },
+      {
+        question: "What is the first step?",
+        answer:
+          "Book the audit and bring the places where staff leave PracticePanther to manage work manually.",
+      },
+    ],
+  },
+  practicePantherIntakeSetup: {
+    title: "PracticePanther Intake Setup | SHIFT Systems",
+    description:
+      "PracticePanther intake setup help for small law firms that need cleaner intake, matter setup, follow-up, and document handoffs.",
+    eyebrow: "PracticePanther intake setup",
+    h1: "PracticePanther Intake Setup",
+    intro:
+      "The intake setup should make the next step obvious.",
+    support:
+      "SHIFT helps small firms review how intake information moves into PracticePanther, how matters get started, and where follow-up or document prep breaks after first contact.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: PP_SETUP_CHECKLIST_PATH,
+    secondaryText: "View setup checklist",
+    sections: [
+      {
+        heading: "Intake should support the work after intake",
+        body: [
+          "PracticePanther intake is only useful if the information helps staff move the matter forward. If intake ends with copying, guessing, or checking multiple places, the setup needs cleanup.",
+        ],
+      },
+      {
+        heading: "Common intake setup problems",
+        bullets: [
+          "The firm collects information but still re-enters it manually.",
+          "New leads and new matters are handled inconsistently.",
+          "Fields do not match what staff need later.",
+          "Follow-up tasks are not clear after intake.",
+          "Document prep still starts from scratch.",
+          "The team is not sure what is missing before work begins.",
+        ],
+      },
+      {
+        heading: "What SHIFT reviews",
+        bullets: [
+          "How leads and clients enter the system.",
+          "Which fields are needed and which create clutter.",
+          "How intake connects to matters, tasks, reminders, and documents.",
+          "Where staff still copy or re-enter information.",
+          "What should be cleaned up first.",
+        ],
+      },
+      {
+        heading: "Cleaner intake usually means fewer surprises later",
+        body: [
+          "A better intake setup helps the team see what happened, what is missing, and what needs to happen next without relying on memory.",
+        ],
+      },
+    ],
+    related: [
+      { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+      { label: "PracticePanther Workflow Cleanup", href: PP_WORKFLOW_CLEANUP_PATH },
+      { label: "PracticePanther Document Automation", href: PP_DOCUMENT_AUTOMATION_PATH },
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+    ],
+    faqs: [
+      {
+        question: "Can this help if we already have intake forms?",
+        answer:
+          "Yes. The audit looks at whether the information from those forms actually supports matter setup, follow-up, and documents.",
+      },
+      {
+        question: "Do we need more fields?",
+        answer:
+          "Not always. Sometimes the better move is fewer, clearer fields that staff actually use.",
+      },
+      {
+        question: "Can this connect to document prep?",
+        answer:
+          "Yes. Intake setup and document prep are closely connected because documents depend on clean information.",
+      },
+      {
+        question: "What is the first step?",
+        answer:
+          "Book the audit and bring the intake steps that create the most follow-up or re-entry work.",
+      },
+    ],
+  },
+  practicePantherDocumentAutomation: {
+    title: "PracticePanther Document Automation | SHIFT Systems",
+    description:
+      "PracticePanther document automation help for small law firms that need cleaner intake data, templates, matter details, and document handoffs.",
+    eyebrow: "PracticePanther document automation",
+    h1: "PracticePanther Document Automation",
+    intro:
+      "Document automation works best when PracticePanther has clean intake and matter data first.",
+    support:
+      "SHIFT helps small firms review what document prep still requires manually and what setup cleanup could make documents easier to prepare and trust.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: PP_INTAKE_SETUP_PATH,
+    secondaryText: "PracticePanther intake setup",
+    sections: [
+      {
+        heading: "The document problem often starts in intake",
+        body: [
+          "If PracticePanther does not have the right information in the right place, document preparation still depends on copying, pasting, checking, and fixing details by hand.",
+        ],
+      },
+      {
+        heading: "Common document automation problems",
+        bullets: [
+          "Templates exist, but staff do not fully trust them.",
+          "Matter details are missing or stored inconsistently.",
+          "The same information gets typed in several places.",
+          "Documents require manual checking because the setup is fragile.",
+          "Intake answers do not cleanly support document prep.",
+          "Staff still build too much from old files.",
+        ],
+      },
+      {
+        heading: "What SHIFT reviews",
+        bullets: [
+          "Which information is needed for common documents.",
+          "Where that information enters PracticePanther.",
+          "How fields, matters, and templates work together.",
+          "Which manual steps create the most delay.",
+          "What should be cleaned up before deeper automation.",
+        ],
+      },
+      {
+        heading: "The first priority is reliability",
+        body: [
+          "A document process that saves a few minutes but creates doubt is not clean enough. The audit looks for the setup gaps that keep staff from trusting the output.",
+        ],
+      },
+    ],
+    related: [
+      { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+      { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
+      { label: "PracticePanther Custom Field Cleanup", href: PP_CUSTOM_FIELD_CLEANUP_PATH },
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+    ],
+    faqs: [
+      {
+        question: "Can this help if our templates already exist?",
+        answer:
+          "Yes. Existing templates can still fail if the fields and matter details feeding them are messy.",
+      },
+      {
+        question: "Do we need to automate every document?",
+        answer:
+          "No. The audit helps identify where automation would reduce the most repeated work first.",
+      },
+      {
+        question: "What if document prep depends on information outside PracticePanther?",
+        answer:
+          "That is exactly the kind of handoff the audit can review.",
+      },
+      {
+        question: "What is the first step?",
+        answer:
+          "Book the audit and bring the document prep steps that still require too much copying, checking, or re-entry.",
+      },
+    ],
+  },
+  practicePantherCustomFieldCleanup: {
+    title: "PracticePanther Custom Field Cleanup | SHIFT Systems",
+    description:
+      "PracticePanther custom field cleanup help for small law firms with confusing fields, inconsistent matter details, or staff usage problems.",
+    eyebrow: "PracticePanther custom field cleanup",
+    h1: "PracticePanther Custom Field Cleanup",
+    intro:
+      "Too many confusing fields can create more admin work instead of less.",
+    support:
+      "SHIFT helps small firms review whether their PracticePanther fields support intake, matters, documents, reminders, and handoffs, or whether they are creating clutter.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: PP_SETUP_CHECKLIST_PATH,
+    secondaryText: "View setup checklist",
+    sections: [
+      {
+        heading: "Fields should make work clearer",
+        body: [
+          "Custom fields are useful when they help the team find, use, and trust the right information. They become a problem when staff ignore them, fill them out differently, or do not know why they exist.",
+        ],
+      },
+      {
+        heading: "Common custom field problems",
+        bullets: [
+          "Fields were added over time without a clear plan.",
+          "Staff do not know which fields matter.",
+          "Important information is missing when documents need it.",
+          "The same detail is captured in more than one place.",
+          "Fields do not match the firm’s actual workflow.",
+          "Reports, tasks, or templates are harder to trust because the data is inconsistent.",
+        ],
+      },
+      {
+        heading: "What SHIFT reviews",
+        bullets: [
+          "Which fields staff actually use.",
+          "Which fields support intake, follow-up, documents, or reporting.",
+          "Where duplicate or unclear fields create friction.",
+          "Which information should be required, optional, or removed.",
+          "How field cleanup could make daily work easier.",
+        ],
+      },
+      {
+        heading: "Clean fields make the rest of the system stronger",
+        body: [
+          "Better fields can make intake easier, follow-up clearer, document prep more reliable, and handoffs less dependent on memory.",
+        ],
+      },
+    ],
+    related: [
+      { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+      { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
+      { label: "PracticePanther Document Automation", href: PP_DOCUMENT_AUTOMATION_PATH },
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+    ],
+    faqs: [
+      {
+        question: "Should we remove old fields?",
+        answer:
+          "Maybe. The audit looks at which fields still support real work and which ones create confusion.",
+      },
+      {
+        question: "Can field cleanup help document prep?",
+        answer:
+          "Yes. Clean matter details and fields often make document preparation easier to trust.",
+      },
+      {
+        question: "What if different staff use fields differently?",
+        answer:
+          "That usually points to unclear setup, unclear ownership, or a field structure that does not match the work.",
+      },
+      {
+        question: "What is the first step?",
+        answer:
+          "Book the audit and bring the fields or matter details that feel confusing, ignored, or unreliable.",
+      },
+    ],
+  },
+  practicePantherSetupChecklist: {
+    title: "PracticePanther Setup Checklist for Small Law Firms | SHIFT Systems",
+    description:
+      "A plain-English PracticePanther setup checklist for small law firms reviewing intake, matters, fields, tasks, reminders, follow-up, documents, and staff handoffs.",
+    eyebrow: "PracticePanther setup checklist",
+    h1: "PracticePanther Setup Checklist for Small Law Firms",
+    intro:
+      "Use this checklist to spot where your PracticePanther setup may be making daily work harder than it needs to be.",
+    support:
+      "The checklist is not a full diagnosis. It is a practical way to prepare for the free setup audit and identify the areas worth reviewing first.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: PRACTICEPANTHER_PATH,
+    secondaryText: "PracticePanther setup help",
+    sections: [
+      {
+        heading: "Intake",
+        bullets: [
+          "New leads and clients enter the system in a consistent way.",
+          "The firm knows who owns the first follow-up.",
+          "Required details are clear before work moves forward.",
+          "Staff are not copying intake answers into multiple places.",
+        ],
+      },
+      {
+        heading: "Matter setup and custom fields",
+        bullets: [
+          "Matter fields match the information staff actually need.",
+          "Important fields are easy to understand.",
+          "Duplicate or stale fields are not creating confusion.",
+          "Matter details support follow-up, documents, and reporting.",
+        ],
+      },
+      {
+        heading: "Tasks, reminders, and follow-up",
+        bullets: [
+          "The next step is clear after a matter is created or updated.",
+          "Follow-up does not depend only on memory.",
+          "Staff trust the tasks and reminders enough to use them.",
+          "Missed steps are easy to catch before they become client problems.",
+        ],
+      },
+      {
+        heading: "Documents and handoffs",
+        bullets: [
+          "Document prep uses clean matter information where possible.",
+          "Staff are not rebuilding documents from old files unnecessarily.",
+          "The person receiving a matter can see what happened and what is missing.",
+          "The owner does not have to manually inspect every step to feel safe.",
+        ],
+      },
+      {
+        heading: "What to do if several items fail",
+        body: [
+          "Do not try to fix everything at once. Start with the area that creates the most missed follow-up, repeated admin work, or staff confusion. That is what the audit helps identify.",
+        ],
+      },
+    ],
+    related: [
+      { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+      { label: "PracticePanther Workflow Cleanup", href: PP_WORKFLOW_CLEANUP_PATH },
+      { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+    ],
+    faqs: [
+      {
+        question: "Is this checklist enough to fix our setup?",
+        answer:
+          "It is a starting point. It helps you identify where to look, but the audit is used to understand what should be cleaned up first.",
+      },
+      {
+        question: "Should every firm use the same setup?",
+        answer:
+          "No. The setup should match the way your firm handles intake, matters, documents, follow-up, and handoffs.",
+      },
+      {
+        question: "Can we use this before the audit?",
+        answer:
+          "Yes. It can help you bring the right examples to the call.",
+      },
+      {
+        question: "What is the first step after using the checklist?",
+        answer:
+          "Book the audit and bring the checklist areas that felt weakest or most confusing.",
       },
     ],
   },
