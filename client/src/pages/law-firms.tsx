@@ -5,6 +5,11 @@ const CALENDLY_URL = "https://calendly.com/ryan-shiftsystems/30min";
 const HUB_PATH = "/law-firms/";
 const AUDIT_PATH = "/law-firms/book-software-setup-audit/";
 const PRACTICEPANTHER_PATH = "/law-firms/practicepanther-setup-help/";
+const INTAKE_FOLLOW_UP_PATH = "/law-firms/intake-follow-up-cleanup/";
+const INTAKE_AUTOMATION_PATH = "/law-firms/intake-automation/";
+const DOCUMENT_AUTOMATION_PATH = "/law-firms/document-automation/";
+const WORKFLOW_CLEANUP_PATH = "/law-firms/workflow-cleanup/";
+const CLIENT_FOLLOW_UP_PATH = "/law-firms/client-follow-up-system/";
 
 type Section = {
   heading: string;
@@ -38,7 +43,15 @@ type PageData = {
   related?: RelatedLink[];
 };
 
-type PageKey = "hub" | "audit" | "practicepanther";
+type PageKey =
+  | "hub"
+  | "audit"
+  | "practicepanther"
+  | "intakeFollowUp"
+  | "intakeAutomation"
+  | "documentAutomation"
+  | "workflowCleanup"
+  | "clientFollowUp";
 
 const sharedFaqs: Faq[] = [
   {
@@ -147,6 +160,8 @@ const pages: Record<PageKey, PageData> = {
     related: [
       { label: "Law Firm Software Setup Help", href: HUB_PATH },
       { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+      { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
+      { label: "Document Automation", href: DOCUMENT_AUTOMATION_PATH },
     ],
     faqs: sharedFaqs,
   },
@@ -219,6 +234,11 @@ const pages: Record<PageKey, PageData> = {
     related: [
       { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
       { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+      { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
+      { label: "Intake Automation", href: INTAKE_AUTOMATION_PATH },
+      { label: "Document Automation", href: DOCUMENT_AUTOMATION_PATH },
+      { label: "Workflow Cleanup", href: WORKFLOW_CLEANUP_PATH },
+      { label: "Client Follow-Up System", href: CLIENT_FOLLOW_UP_PATH },
     ],
     faqs: [
       {
@@ -354,6 +374,412 @@ const pages: Record<PageKey, PageData> = {
       },
     ],
   },
+
+  intakeFollowUp: {
+    title: "Law Firm Intake and Follow-Up Cleanup | SHIFT Systems",
+    description:
+      "Help for small law firms where intake happens, but follow-up still falls through the cracks. Book a free law firm software setup audit with SHIFT.",
+    eyebrow: "Intake and follow-up cleanup for small law firms",
+    h1: "Law Firm Intake and Follow-Up Cleanup",
+    intro:
+      "If your firm collects lead or client information but the next step still depends on memory, the intake form is not enough.",
+    support:
+      "SHIFT helps small law firms look at what happens after first contact, where follow-up gets missed, and what should be cleaned up first.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: HUB_PATH,
+    secondaryText: "See law firm setup help",
+    sections: [
+      {
+        heading: "Intake is not finished when the form is submitted",
+        body: [
+          "A clean intake path should make the next step obvious. If the firm receives a form, call, email, or referral and then someone has to remember what to do next, the process is still fragile.",
+          "The problem may not be the form itself. It may be what happens after the information enters the firm.",
+        ],
+      },
+      {
+        heading: "Common signs follow-up is breaking",
+        bullets: [
+          "New leads wait too long before someone responds.",
+          "Staff are not sure who owns the next step.",
+          "Follow-up reminders live in inboxes, notes, or someone’s memory.",
+          "The same client details get entered in multiple places.",
+          "Matter setup does not clearly trigger tasks or document prep.",
+          "The owner has to check manually to make sure nothing was missed.",
+        ],
+      },
+      {
+        heading: "What SHIFT reviews",
+        bullets: [
+          "How new inquiries enter the firm.",
+          "What happens after an intake form, phone call, or referral.",
+          "Where the first follow-up is assigned or missed.",
+          "How information moves into the firm’s practice management software.",
+          "Which handoffs create confusion for staff.",
+          "What cleanup would reduce the most risk first.",
+        ],
+      },
+      {
+        heading: "What cleanup can include",
+        body: [
+          "Cleanup can mean clearer intake steps, better follow-up reminders, cleaner matter setup, fewer duplicate fields, or a simpler handoff from first contact to the person doing the work.",
+          "The goal is not more busywork. The goal is a process the team can trust.",
+        ],
+      },
+      {
+        heading: "Start with a setup audit",
+        body: [
+          "The audit is the first step if you know leads or clients are falling through the cracks, but you are not sure whether the problem is the form, the software, the staff process, or the handoff between them.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Law Firm Software Setup Help", href: HUB_PATH },
+      { label: "Law Firm Intake Automation", href: INTAKE_AUTOMATION_PATH },
+      { label: "Client Follow-Up System", href: CLIENT_FOLLOW_UP_PATH },
+    ],
+    faqs: [
+      {
+        question: "Is this only for firms with online intake forms?",
+        answer:
+          "No. Intake can start with a form, phone call, email, referral, chat, or consultation request. The audit looks at what happens after the first contact.",
+      },
+      {
+        question: "Can this help if follow-up is currently manual?",
+        answer:
+          "Yes. Manual follow-up is common. The question is where it creates missed steps, repeated work, or unclear ownership.",
+      },
+      {
+        question: "Do we need to switch software?",
+        answer:
+          "Not necessarily. Many follow-up problems come from setup and process gaps, not the tool itself.",
+      },
+      {
+        question: "What should we bring to the audit?",
+        answer:
+          "Bring the messy parts: where new leads come from, what staff do next, and where follow-up gets missed or delayed.",
+      },
+    ],
+  },
+  intakeAutomation: {
+    title: "Law Firm Intake Automation | SHIFT Systems",
+    description:
+      "Law firm intake automation help for small firms that need cleaner intake, follow-up, matter setup, and staff handoffs.",
+    eyebrow: "Intake automation for small law firms",
+    h1: "Law Firm Intake Automation",
+    intro:
+      "Better intake should reduce admin work, not create more fields for staff to manage.",
+    support:
+      "SHIFT helps small law firms review intake paths and identify where automation could make first contact, follow-up, matter setup, and document prep easier to rely on.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: INTAKE_FOLLOW_UP_PATH,
+    secondaryText: "Intake + follow-up cleanup",
+    sections: [
+      {
+        heading: "Good intake makes the next step clear",
+        body: [
+          "A law firm intake process should do more than collect information. It should help the team know what happened, what is missing, who owns the next step, and what should happen next.",
+          "If intake creates another place to check or another form to copy from, it may be adding work instead of removing it.",
+        ],
+      },
+      {
+        heading: "Common intake automation problems",
+        bullets: [
+          "Forms collect information, but staff still re-enter it manually.",
+          "The firm gets leads from several places and tracks them inconsistently.",
+          "No one knows whether a lead has been contacted yet.",
+          "Matter setup starts before the right details are collected.",
+          "Documents still require repeated copying and pasting.",
+          "The intake path is different depending on who handles it.",
+        ],
+      },
+      {
+        heading: "What a cleaner intake path should do",
+        bullets: [
+          "Capture the right information without making the form feel like homework.",
+          "Make the next step visible to the right person.",
+          "Reduce repeated data entry.",
+          "Support matter setup, follow-up, and document prep.",
+          "Make missing information easier to spot.",
+          "Fit the way the firm actually works.",
+        ],
+      },
+      {
+        heading: "What SHIFT can inspect",
+        body: [
+          "During the audit, we look at how intake starts, where information goes, who handles the next step, and where the setup creates extra admin work.",
+          "The goal is to identify the first cleanup priority before adding more automation.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
+      { label: "Document Automation", href: DOCUMENT_AUTOMATION_PATH },
+    ],
+    faqs: [
+      {
+        question: "Should intake automation replace staff judgment?",
+        answer:
+          "No. It should remove avoidable admin work and make the next step clearer, while still giving staff room to use judgment where it matters.",
+      },
+      {
+        question: "Can this work with the software we already use?",
+        answer:
+          "Often, yes. The audit starts with your current tools and process before assuming anything needs to be replaced.",
+      },
+      {
+        question: "What if our intake form is already built?",
+        answer:
+          "That can still be useful. The bigger question is whether the information supports follow-up, matter setup, and document prep after the form is submitted.",
+      },
+      {
+        question: "What is the first step?",
+        answer:
+          "Book the audit so we can review where intake creates friction and what should be cleaned up first.",
+      },
+    ],
+  },
+  documentAutomation: {
+    title: "Law Firm Document Automation | SHIFT Systems",
+    description:
+      "Law firm document automation help for small firms that want cleaner intake data, less manual document prep, and fewer repeated admin steps.",
+    eyebrow: "Document automation for small law firms",
+    h1: "Law Firm Document Automation",
+    intro:
+      "Document automation works best when intake and matter details are clean before the document is created.",
+    support:
+      "SHIFT helps small law firms review where document prep is too manual and what setup issues are causing repeated copying, checking, and re-entry.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: INTAKE_AUTOMATION_PATH,
+    secondaryText: "Intake automation help",
+    sections: [
+      {
+        heading: "Document automation starts before the document",
+        body: [
+          "If the right information is not collected cleanly during intake or matter setup, document automation becomes fragile.",
+          "The firm may still need someone to copy, paste, check, retype, and fix details before a document is ready.",
+        ],
+      },
+      {
+        heading: "Common document prep symptoms",
+        bullets: [
+          "The same information is entered into forms, matters, and documents separately.",
+          "Staff copy and paste from emails, notes, or old files.",
+          "Documents are delayed because required details are missing.",
+          "Templates exist, but they are hard to trust.",
+          "Matter information is stored inconsistently.",
+          "The firm has to check documents manually because the setup is unreliable.",
+        ],
+      },
+      {
+        heading: "What SHIFT can inspect",
+        bullets: [
+          "Where document details first enter the firm.",
+          "Which fields or answers are needed for common documents.",
+          "Where information gets copied or re-entered.",
+          "How intake and matter setup support document prep.",
+          "Which templates or handoffs create the most friction.",
+          "What cleanup should happen before deeper automation.",
+        ],
+      },
+      {
+        heading: "The first win is usually cleaner data flow",
+        body: [
+          "The best first step may not be a bigger document system. It may be cleaning up how information moves from intake to matter setup to document preparation.",
+          "That is what the audit is designed to clarify.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Law Firm Intake Automation", href: INTAKE_AUTOMATION_PATH },
+      { label: "Workflow Cleanup", href: WORKFLOW_CLEANUP_PATH },
+    ],
+    faqs: [
+      {
+        question: "Can this help if we already have templates?",
+        answer:
+          "Yes. Templates are only one piece. The audit looks at whether the information feeding those templates is clean and reliable.",
+      },
+      {
+        question: "Do we need to automate every document?",
+        answer:
+          "No. The better first move is usually finding the documents or steps that create the most repeated admin work.",
+      },
+      {
+        question: "Can this help with intake data?",
+        answer:
+          "Yes. Intake and matter data often decide whether document automation is useful or fragile.",
+      },
+      {
+        question: "What is the first step?",
+        answer:
+          "Book the audit and bring the document prep steps that feel most repetitive or unreliable.",
+      },
+    ],
+  },
+  workflowCleanup: {
+    title: "Law Firm Workflow Cleanup | SHIFT Systems",
+    description:
+      "Law firm workflow cleanup help for small firms with messy intake, follow-up, documents, reminders, tasks, or staff handoffs.",
+    eyebrow: "Workflow cleanup for small law firms",
+    h1: "Law Firm Workflow Cleanup",
+    intro:
+      "The software is not broken just because the workflow is messy.",
+    support:
+      "SHIFT helps small firms look at how work moves through the firm and identify where setup, handoffs, reminders, or manual steps are creating friction.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: HUB_PATH,
+    secondaryText: "See law firm setup help",
+    sections: [
+      {
+        heading: "Messy workflow usually has a few repeat causes",
+        body: [
+          "When daily work feels scattered, it is tempting to blame the software. Sometimes the tool is not the real issue. The problem may be unclear ownership, inconsistent setup, weak handoffs, or steps that still live outside the system.",
+        ],
+      },
+      {
+        heading: "Where law firm workflows usually break",
+        bullets: [
+          "New matters start without a clear next step.",
+          "Staff use different paths for the same type of work.",
+          "Follow-up is tracked manually.",
+          "Matter details live in too many places.",
+          "Documents depend on repeated copying and checking.",
+          "Tasks and reminders are not trusted.",
+          "The owner has to inspect work manually to feel safe.",
+        ],
+      },
+      {
+        heading: "What the audit reviews",
+        bullets: [
+          "How work enters the firm.",
+          "How the right person knows what to do next.",
+          "Where reminders, tasks, or follow-up break down.",
+          "How information moves between intake, matters, and documents.",
+          "Which handoffs create the most confusion.",
+          "What should be cleaned up first.",
+        ],
+      },
+      {
+        heading: "The goal is a workflow staff can actually use",
+        body: [
+          "Workflow cleanup should make the day easier for the people doing the work. If the setup adds steps, creates confusion, or requires constant checking, it is not clean enough yet.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
+      { label: "Client Follow-Up System", href: CLIENT_FOLLOW_UP_PATH },
+      { label: "Document Automation", href: DOCUMENT_AUTOMATION_PATH },
+    ],
+    faqs: [
+      {
+        question: "Is workflow cleanup the same as switching software?",
+        answer:
+          "No. Workflow cleanup starts by reviewing how the current setup supports daily work before assuming a new tool is needed.",
+      },
+      {
+        question: "Can this help if the team has workarounds?",
+        answer:
+          "Yes. Workarounds are often the clearest sign that the setup does not match how the firm actually works.",
+      },
+      {
+        question: "What if we do not know where the problem starts?",
+        answer:
+          "That is a good reason to book the audit. The call is meant to help identify the first cleanup priority.",
+      },
+      {
+        question: "What should we bring to the audit?",
+        answer:
+          "Bring the parts of the day that feel messy: intake, follow-up, documents, reminders, handoffs, or anything staff do outside the system.",
+      },
+    ],
+  },
+  clientFollowUp: {
+    title: "Law Firm Client Follow-Up System | SHIFT Systems",
+    description:
+      "Help for small law firms that need cleaner client follow-up, lead follow-up, reminders, and staff handoffs inside their current software setup.",
+    eyebrow: "Client follow-up systems for small law firms",
+    h1: "Law Firm Client Follow-Up System",
+    intro:
+      "Follow-up should not live in someone’s head.",
+    support:
+      "SHIFT helps small law firms review where client or lead follow-up is getting missed and what setup changes could make the next step easier to see and trust.",
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: INTAKE_FOLLOW_UP_PATH,
+    secondaryText: "Intake + follow-up cleanup",
+    sections: [
+      {
+        heading: "Follow-up breaks when ownership is unclear",
+        body: [
+          "Most firms do not miss follow-up because they do not care. It usually happens because the next step is unclear, hidden in an inbox, tracked manually, or assigned in a way the team does not trust.",
+        ],
+      },
+      {
+        heading: "Common missed follow-up points",
+        bullets: [
+          "A new lead submits a form and waits too long.",
+          "A potential client needs another message after the first call.",
+          "A current client owes information before documents can move forward.",
+          "A staff member is waiting on someone else but no reminder exists.",
+          "A matter changes status but the next task is not clear.",
+          "The owner has to ask for updates because the system does not show them clearly.",
+        ],
+      },
+      {
+        heading: "What a cleaner follow-up system should do",
+        bullets: [
+          "Show who owns the next step.",
+          "Make timing visible.",
+          "Connect follow-up to intake, matter status, and document needs.",
+          "Reduce manual checking.",
+          "Make missed steps easier to catch before they become client problems.",
+          "Fit the firm’s actual communication style.",
+        ],
+      },
+      {
+        heading: "What SHIFT can review",
+        body: [
+          "During the audit, we look at how follow-up is tracked today, where the process depends on memory, and what setup cleanup could make the next step easier for the team to trust.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
+      { label: "Workflow Cleanup", href: WORKFLOW_CLEANUP_PATH },
+    ],
+    faqs: [
+      {
+        question: "Is this for lead follow-up or client follow-up?",
+        answer:
+          "Both can matter. The audit can look at new lead follow-up, active client follow-up, document follow-up, and internal staff reminders.",
+      },
+      {
+        question: "Can this help if follow-up is handled by one reliable person?",
+        answer:
+          "Yes. If follow-up depends too much on one person, the firm is carrying hidden risk. Cleanup can make the process easier to share and trust.",
+      },
+      {
+        question: "Do we need a new tool?",
+        answer:
+          "Not necessarily. The first step is reviewing the current setup and where follow-up is getting lost.",
+      },
+      {
+        question: "What is the first step?",
+        answer:
+          "Book the audit and bring the follow-up moments that worry you most.",
+      },
+    ],
+  },
 };
 
 function setMeta(name: string, content: string) {
@@ -379,6 +805,9 @@ function SiteHeader() {
           </a>
           <a href={PRACTICEPANTHER_PATH} className="hover:text-foreground transition-colors">
             PracticePanther
+          </a>
+          <a href={INTAKE_FOLLOW_UP_PATH} className="hover:text-foreground transition-colors">
+            Intake cleanup
           </a>
           <a href={AUDIT_PATH} className="hover:text-foreground transition-colors">
             Setup audit

@@ -17,6 +17,16 @@ function Router() {
       <Route path="/law-firms/book-software-setup-audit/" component={() => <LawFirmsPage pageKey="audit" />} />
       <Route path="/law-firms/practicepanther-setup-help" component={() => <LawFirmsPage pageKey="practicepanther" />} />
       <Route path="/law-firms/practicepanther-setup-help/" component={() => <LawFirmsPage pageKey="practicepanther" />} />
+      <Route path="/law-firms/intake-follow-up-cleanup" component={() => <LawFirmsPage pageKey="intakeFollowUp" />} />
+      <Route path="/law-firms/intake-follow-up-cleanup/" component={() => <LawFirmsPage pageKey="intakeFollowUp" />} />
+      <Route path="/law-firms/intake-automation" component={() => <LawFirmsPage pageKey="intakeAutomation" />} />
+      <Route path="/law-firms/intake-automation/" component={() => <LawFirmsPage pageKey="intakeAutomation" />} />
+      <Route path="/law-firms/document-automation" component={() => <LawFirmsPage pageKey="documentAutomation" />} />
+      <Route path="/law-firms/document-automation/" component={() => <LawFirmsPage pageKey="documentAutomation" />} />
+      <Route path="/law-firms/workflow-cleanup" component={() => <LawFirmsPage pageKey="workflowCleanup" />} />
+      <Route path="/law-firms/workflow-cleanup/" component={() => <LawFirmsPage pageKey="workflowCleanup" />} />
+      <Route path="/law-firms/client-follow-up-system" component={() => <LawFirmsPage pageKey="clientFollowUp" />} />
+      <Route path="/law-firms/client-follow-up-system/" component={() => <LawFirmsPage pageKey="clientFollowUp" />} />
       <Route component={NotFound} />
     </Switch>
   );
