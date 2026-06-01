@@ -45,6 +45,12 @@ type RelatedLink = {
   href: string;
 };
 
+type LinkGroup = {
+  heading: string;
+  description: string;
+  links: RelatedLink[];
+};
+
 type PageData = {
   title: string;
   description: string;
@@ -59,6 +65,7 @@ type PageData = {
   sections: Section[];
   faqs: Faq[];
   related?: RelatedLink[];
+  linkGroups?: LinkGroup[];
 };
 
 type PageKey =
@@ -602,17 +609,57 @@ const pages: Record<PageKey, PageData> = {
     ],
     related: [
       { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
-      { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
-      { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
-      { label: "Intake Automation", href: INTAKE_AUTOMATION_PATH },
-      { label: "Document Automation", href: DOCUMENT_AUTOMATION_PATH },
-      { label: "Workflow Cleanup", href: WORKFLOW_CLEANUP_PATH },
-      { label: "Clio Setup Help", href: CLIO_PATH },
-      { label: "MyCase Setup Help", href: MYCASE_PATH },
-      { label: "Lawmatics Setup Help", href: LAWMATICS_PATH },
+      { label: "Law Firm Software Implementation Consultant", href: SOFTWARE_IMPLEMENTATION_PATH },
       { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
       { label: "Legal CRM Setup Help", href: LEGAL_CRM_SETUP_PATH },
-      { label: "Client Follow-Up System", href: CLIENT_FOLLOW_UP_PATH },
+      { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+      { label: "Clio Setup Help", href: CLIO_PATH },
+    ],
+    linkGroups: [
+      {
+        heading: "Start here",
+        description: "Use these pages when the firm knows the setup is messy but needs help choosing the first cleanup priority.",
+        links: [
+          { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+          { label: "Law Firm Software Implementation Consultant", href: SOFTWARE_IMPLEMENTATION_PATH },
+          { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
+          { label: "Legal CRM Setup Help", href: LEGAL_CRM_SETUP_PATH },
+        ],
+      },
+      {
+        heading: "Browse by software",
+        description: "Use these pages when the firm is already searching around a specific system.",
+        links: [
+          { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+          { label: "Clio Setup Help", href: CLIO_PATH },
+          { label: "MyCase Setup Help", href: MYCASE_PATH },
+          { label: "Lawmatics Setup Help", href: LAWMATICS_PATH },
+          { label: "Smokeball Setup Help", href: SMOKEBALL_PATH },
+          { label: "Actionstep Setup Help", href: ACTIONSTEP_PATH },
+        ],
+      },
+      {
+        heading: "Browse by problem",
+        description: "Use these pages when the pain is missed follow-up, manual document work, intake confusion, or unclear handoffs.",
+        links: [
+          { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
+          { label: "Law Firm Intake Automation", href: INTAKE_AUTOMATION_PATH },
+          { label: "Law Firm Document Automation", href: DOCUMENT_AUTOMATION_PATH },
+          { label: "Law Firm Workflow Cleanup", href: WORKFLOW_CLEANUP_PATH },
+          { label: "Client Follow-Up System", href: CLIENT_FOLLOW_UP_PATH },
+          { label: "Best Practice Management Software Setup Help", href: BEST_PMS_SETUP_PATH },
+        ],
+      },
+      {
+        heading: "Browse by region",
+        description: "Use these pages when firms search by state but still need remote help cleaning up the same software problems.",
+        links: [
+          { label: "North Carolina Law Firm Software Setup Help", href: NORTH_CAROLINA_PATH },
+          { label: "South Carolina Law Firm Software Setup Help", href: SOUTH_CAROLINA_PATH },
+          { label: "Tennessee Law Firm Software Setup Help", href: TENNESSEE_PATH },
+          { label: "Virginia Law Firm Software Setup Help", href: VIRGINIA_PATH },
+        ],
+      },
     ],
     faqs: [
       {
@@ -1592,6 +1639,9 @@ function SiteHeader() {
           <a href={INTAKE_FOLLOW_UP_PATH} className="hover:text-foreground transition-colors">
             Intake cleanup
           </a>
+          <a href={PMS_CLEANUP_PATH} className="hover:text-foreground transition-colors">
+            Software cleanup
+          </a>
           <a href={AUDIT_PATH} className="hover:text-foreground transition-colors">
             Setup audit
           </a>
@@ -1706,6 +1756,33 @@ export default function LawFirmsPage({ pageKey }: { pageKey: PageKey }) {
             </article>
           ))}
         </section>
+
+        {page.linkGroups && (
+          <section className="max-w-6xl mx-auto px-6 lg:px-8 pb-12">
+            <div className="rounded-3xl border border-border bg-card p-6 md:p-9">
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary mb-3">Find the right page</p>
+              <h2 className="text-2xl md:text-3xl font-semibold mb-4">Choose the path that matches the problem</h2>
+              <p className="text-muted-foreground mb-8 max-w-3xl">
+                Start with the audit if you are not sure what is broken. If the firm already knows the software, problem area, or region it is searching from, these paths make the next page easier to find.
+              </p>
+              <div className="grid lg:grid-cols-2 gap-5">
+                {page.linkGroups.map((group) => (
+                  <article key={group.heading} className="rounded-2xl border border-border bg-muted/30 p-5">
+                    <h3 className="text-xl font-semibold mb-2">{group.heading}</h3>
+                    <p className="text-sm text-muted-foreground mb-4">{group.description}</p>
+                    <div className="grid gap-3">
+                      {group.links.map((link) => (
+                        <a key={link.href} href={link.href} className="rounded-xl border border-border bg-background px-4 py-3 text-sm font-semibold transition hover:bg-muted">
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {page.related && (
           <section className="max-w-6xl mx-auto px-6 lg:px-8 pb-12">
