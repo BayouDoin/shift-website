@@ -37,6 +37,24 @@ function Router() {
       <Route path="/law-firms/practicepanther-custom-field-cleanup/" component={() => <LawFirmsPage pageKey="practicePantherCustomFieldCleanup" />} />
       <Route path="/law-firms/practicepanther-setup-checklist" component={() => <LawFirmsPage pageKey="practicePantherSetupChecklist" />} />
       <Route path="/law-firms/practicepanther-setup-checklist/" component={() => <LawFirmsPage pageKey="practicePantherSetupChecklist" />} />
+      <Route path="/law-firms/clio-setup-help" component={() => <LawFirmsPage pageKey="clio" />} />
+      <Route path="/law-firms/clio-setup-help/" component={() => <LawFirmsPage pageKey="clio" />} />
+      <Route path="/law-firms/mycase-setup-help" component={() => <LawFirmsPage pageKey="mycase" />} />
+      <Route path="/law-firms/mycase-setup-help/" component={() => <LawFirmsPage pageKey="mycase" />} />
+      <Route path="/law-firms/lawmatics-setup-help" component={() => <LawFirmsPage pageKey="lawmatics" />} />
+      <Route path="/law-firms/lawmatics-setup-help/" component={() => <LawFirmsPage pageKey="lawmatics" />} />
+      <Route path="/law-firms/smokeball-setup-help" component={() => <LawFirmsPage pageKey="smokeball" />} />
+      <Route path="/law-firms/smokeball-setup-help/" component={() => <LawFirmsPage pageKey="smokeball" />} />
+      <Route path="/law-firms/actionstep-setup-help" component={() => <LawFirmsPage pageKey="actionstep" />} />
+      <Route path="/law-firms/actionstep-setup-help/" component={() => <LawFirmsPage pageKey="actionstep" />} />
+      <Route path="/law-firms/best-practice-management-software-setup-help" component={() => <LawFirmsPage pageKey="bestPmsSetup" />} />
+      <Route path="/law-firms/best-practice-management-software-setup-help/" component={() => <LawFirmsPage pageKey="bestPmsSetup" />} />
+      <Route path="/law-firms/law-firm-software-implementation-consultant" component={() => <LawFirmsPage pageKey="softwareImplementation" />} />
+      <Route path="/law-firms/law-firm-software-implementation-consultant/" component={() => <LawFirmsPage pageKey="softwareImplementation" />} />
+      <Route path="/law-firms/practice-management-software-cleanup" component={() => <LawFirmsPage pageKey="pmsCleanup" />} />
+      <Route path="/law-firms/practice-management-software-cleanup/" component={() => <LawFirmsPage pageKey="pmsCleanup" />} />
+      <Route path="/law-firms/legal-crm-setup-help" component={() => <LawFirmsPage pageKey="legalCrmSetup" />} />
+      <Route path="/law-firms/legal-crm-setup-help/" component={() => <LawFirmsPage pageKey="legalCrmSetup" />} />
       <Route component={NotFound} />
     </Switch>
   );

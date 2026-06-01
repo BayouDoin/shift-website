@@ -15,6 +15,15 @@ const PP_INTAKE_SETUP_PATH = "/law-firms/practicepanther-intake-setup/";
 const PP_DOCUMENT_AUTOMATION_PATH = "/law-firms/practicepanther-document-automation/";
 const PP_CUSTOM_FIELD_CLEANUP_PATH = "/law-firms/practicepanther-custom-field-cleanup/";
 const PP_SETUP_CHECKLIST_PATH = "/law-firms/practicepanther-setup-checklist/";
+const CLIO_PATH = "/law-firms/clio-setup-help/";
+const MYCASE_PATH = "/law-firms/mycase-setup-help/";
+const LAWMATICS_PATH = "/law-firms/lawmatics-setup-help/";
+const SMOKEBALL_PATH = "/law-firms/smokeball-setup-help/";
+const ACTIONSTEP_PATH = "/law-firms/actionstep-setup-help/";
+const BEST_PMS_SETUP_PATH = "/law-firms/best-practice-management-software-setup-help/";
+const SOFTWARE_IMPLEMENTATION_PATH = "/law-firms/law-firm-software-implementation-consultant/";
+const PMS_CLEANUP_PATH = "/law-firms/practice-management-software-cleanup/";
+const LEGAL_CRM_SETUP_PATH = "/law-firms/legal-crm-setup-help/";
 
 type Section = {
   heading: string;
@@ -61,7 +70,16 @@ type PageKey =
   | "practicePantherIntakeSetup"
   | "practicePantherDocumentAutomation"
   | "practicePantherCustomFieldCleanup"
-  | "practicePantherSetupChecklist";
+  | "practicePantherSetupChecklist"
+  | "clio"
+  | "mycase"
+  | "lawmatics"
+  | "smokeball"
+  | "actionstep"
+  | "bestPmsSetup"
+  | "softwareImplementation"
+  | "pmsCleanup"
+  | "legalCrmSetup";
 
 const sharedFaqs: Faq[] = [
   {
@@ -86,7 +104,248 @@ const sharedFaqs: Faq[] = [
   },
 ];
 
+function makeSoftwareSetupPage(tool: string, toolPath: string, detail: string): PageData {
+  return {
+    title: `${tool} Setup Help for Small Law Firms | SHIFT Systems`,
+    description: `Get ${tool} setup help for law firm intake, follow-up, documents, reminders, and staff handoffs. Book a free law firm software setup audit with SHIFT.`,
+    eyebrow: `${tool} setup help for small law firms`,
+    h1: `${tool} Setup Help for Small Law Firms`,
+    intro: `For small law firms using ${tool}, but still relying on manual follow-up, unclear handoffs, messy matter details, or documents that take too much staff time.`,
+    support: `SHIFT helps firms look at how ${tool} is being used today, where the setup is creating friction, and what should be cleaned up first. ${detail}`,
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: HUB_PATH,
+    secondaryText: "See law firm setup help",
+    sections: [
+      {
+        heading: `When ${tool} setup usually needs cleanup`,
+        body: [
+          `Most firms do not need another software lecture. They need the setup inside ${tool} to match the real path from first contact to finished work.`,
+        ],
+        bullets: [
+          "New inquiries come in, but the next step is not always clear.",
+          "Staff still track follow-up outside the system.",
+          "Matter details are inconsistent, incomplete, or hard to trust.",
+          "Documents still require repeated copying, checking, and re-entry.",
+          "Tasks and reminders exist, but the team does not rely on them.",
+          "The firm is unsure whether the problem is the software or the setup around it.",
+        ],
+      },
+      {
+        heading: "What SHIFT reviews",
+        body: [
+          "The audit focuses on the daily work, not abstract features. We look at where information enters the firm, where it gets stuck, and where staff have to fill gaps manually.",
+        ],
+        bullets: [
+          "Lead and client intake flow.",
+          "Matter setup and required information.",
+          "Follow-up steps after calls, forms, consults, and missing documents.",
+          "Task, reminder, and staff handoff points.",
+          "Document preparation touchpoints.",
+          "Fields or statuses that confuse the team.",
+          "Small cleanup priorities that would make the work easier first.",
+        ],
+      },
+      {
+        heading: "The goal is a more reliable work path",
+        body: [
+          `A better ${tool} setup should make it easier for the team to see what happened, what is missing, who owns the next step, and what should happen next.`,
+          "That does not always require a rebuild. Often, it starts with cleaning up the parts that create the most repeated staff work.",
+        ],
+      },
+      {
+        heading: "Good fit for the audit",
+        bullets: [
+          `Your firm already uses ${tool}, but the team still works around it.` ,
+          "You are getting missed follow-up, duplicate work, or unclear handoffs.",
+          "You want a plain-English view of what to fix first.",
+          "You are considering a change, but want to know whether cleanup would solve the real problem.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Book the setup audit", href: AUDIT_PATH },
+      { label: "Law Firm Software Setup Help", href: HUB_PATH },
+      { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
+      { label: "Law Firm Intake Automation", href: INTAKE_AUTOMATION_PATH },
+      { label: "Law Firm Document Automation", href: DOCUMENT_AUTOMATION_PATH },
+      { label: "Legal CRM Setup Help", href: LEGAL_CRM_SETUP_PATH },
+    ],
+    faqs: [
+      {
+        question: `Do you replace ${tool}?`,
+        answer: "No. The audit starts by looking at whether your current setup can be cleaned up before assuming the firm needs a different tool.",
+      },
+      {
+        question: "Do we need to prepare a diagram before the call?",
+        answer: "No. Bring examples of the messy parts. The call is meant to make the first cleanup priority clearer.",
+      },
+      {
+        question: "Can this help if staff use the software differently?",
+        answer: "Yes. Inconsistent staff use is often a sign that the setup, fields, steps, or handoffs need to be clarified.",
+      },
+      {
+        question: "What is the first step?",
+        answer: "Book the audit. We will use the call to understand where the current setup is creating the most friction.",
+      },
+    ],
+  };
+}
+
+function makeProblemPage(options: {
+  title: string;
+  description: string;
+  eyebrow: string;
+  h1: string;
+  intro: string;
+  support: string;
+  problemHeading: string;
+  bullets: string[];
+}): PageData {
+  return {
+    title: `${options.title} | SHIFT Systems`,
+    description: options.description,
+    eyebrow: options.eyebrow,
+    h1: options.h1,
+    intro: options.intro,
+    support: options.support,
+    primaryHref: AUDIT_PATH,
+    primaryText: "Book the audit",
+    secondaryHref: HUB_PATH,
+    secondaryText: "See law firm setup help",
+    sections: [
+      {
+        heading: options.problemHeading,
+        body: [
+          "Small law firms often buy the right tool, then lose time because the tool is not set up around the way the firm actually works.",
+        ],
+        bullets: options.bullets,
+      },
+      {
+        heading: "What the audit looks for",
+        bullets: [
+          "Where new leads, clients, or matters enter the firm.",
+          "Where information gets copied, re-entered, or checked manually.",
+          "Where follow-up depends on memory or one person watching a list.",
+          "Where staff handoffs create confusion or delay.",
+          "Where the current software setup does not match the real workflow.",
+          "Which cleanup priority would reduce the most friction first.",
+        ],
+      },
+      {
+        heading: "Why this comes before a bigger change",
+        body: [
+          "Switching tools before identifying the real bottleneck can turn a messy process into a messy process inside a different system.",
+          "The better first move is to understand what is actually breaking, then decide whether the answer is cleanup, configuration, automation, or a larger change later.",
+        ],
+      },
+    ],
+    related: [
+      { label: "Book the setup audit", href: AUDIT_PATH },
+      { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
+      { label: "Clio Setup Help", href: CLIO_PATH },
+      { label: "MyCase Setup Help", href: MYCASE_PATH },
+      { label: "Lawmatics Setup Help", href: LAWMATICS_PATH },
+      { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
+    ],
+    faqs: sharedFaqs,
+  };
+}
+
 const pages: Record<PageKey, PageData> = {
+  clio: makeSoftwareSetupPage(
+    "Clio",
+    CLIO_PATH,
+    "For Clio firms, this usually means reviewing intake, matter setup, tasks, reminders, documents, and the handoff from lead to active work."
+  ),
+  mycase: makeSoftwareSetupPage(
+    "MyCase",
+    MYCASE_PATH,
+    "For MyCase firms, this usually means reviewing intake, matter details, client communication follow-up, document touchpoints, and task clarity."
+  ),
+  lawmatics: makeSoftwareSetupPage(
+    "Lawmatics",
+    LAWMATICS_PATH,
+    "For Lawmatics firms, this usually means reviewing lead intake, follow-up steps, status changes, reminders, and the handoff into active matter work."
+  ),
+  smokeball: makeSoftwareSetupPage(
+    "Smokeball",
+    SMOKEBALL_PATH,
+    "For Smokeball firms, this usually means reviewing matter setup, task flow, document touchpoints, intake handoffs, and daily staff visibility."
+  ),
+  actionstep: makeSoftwareSetupPage(
+    "Actionstep",
+    ACTIONSTEP_PATH,
+    "For Actionstep firms, this usually means reviewing workflow steps, matter stages, staff handoffs, document touchpoints, and follow-up visibility."
+  ),
+  bestPmsSetup: makeProblemPage({
+    title: "Best Practice Management Software Setup Help for Small Law Firms",
+    description: "Compare law firm software setup help by the work it improves: intake, follow-up, documents, reminders, staff handoffs, and practice management cleanup.",
+    eyebrow: "Software setup help for small law firms",
+    h1: "Best Practice Management Software Setup Help for Small Law Firms",
+    intro: "The best setup help is not about memorizing every button inside a tool. It is about making the software support the way the firm actually handles clients, matters, follow-up, and documents.",
+    support: "SHIFT helps small firms look at the full work path, find the setup gaps, and choose the first cleanup priority before making bigger tool decisions.",
+    problemHeading: "What good setup help should actually improve",
+    bullets: [
+      "New inquiries have a clear next step.",
+      "Matter details are captured once and used in the right places.",
+      "Follow-up is visible instead of dependent on memory.",
+      "Documents are supported by cleaner intake and matter data.",
+      "Staff know what happened, what is missing, and who owns the next step.",
+      "The firm can tell the difference between a software problem and a setup problem.",
+    ],
+  }),
+  softwareImplementation: makeProblemPage({
+    title: "Law Firm Software Implementation Consultant",
+    description: "Get plain-English law firm software implementation help for intake, matter setup, follow-up, documents, reminders, and staff handoffs.",
+    eyebrow: "Implementation help for small law firms",
+    h1: "Law Firm Software Implementation Consultant",
+    intro: "Implementation is where many firms lose momentum. The software may be purchased, but the daily process still depends on manual work, memory, and staff workarounds.",
+    support: "SHIFT helps small firms turn software into a clearer operating path for intake, matters, documents, follow-up, and handoffs.",
+    problemHeading: "Signs implementation is not finished yet",
+    bullets: [
+      "The tool is active, but staff still use outside lists to manage work.",
+      "Lead and client intake does not clearly trigger the next step.",
+      "Matter setup varies depending on who enters the information.",
+      "Documents still require repeated manual copying.",
+      "Tasks and reminders are not trusted enough to run the day.",
+      "The firm has features available, but not a reliable work path.",
+    ],
+  }),
+  pmsCleanup: makeProblemPage({
+    title: "Practice Management Software Cleanup for Law Firms",
+    description: "Clean up law firm practice management software setup across intake, fields, matter stages, follow-up, documents, reminders, and staff handoffs.",
+    eyebrow: "Practice management software cleanup",
+    h1: "Practice Management Software Cleanup for Law Firms",
+    intro: "When practice management software gets messy, the team starts working around it. That creates duplicate work, missed follow-up, and unclear ownership.",
+    support: "SHIFT helps firms identify which part of the setup is creating the most friction and what should be cleaned up first.",
+    problemHeading: "Common cleanup areas",
+    bullets: [
+      "Old fields, statuses, or steps that no longer match the firm.",
+      "Matter details that are incomplete or inconsistent.",
+      "Tasks and reminders that are too vague to trust.",
+      "Follow-up steps that live outside the system.",
+      "Document preparation that depends on repeated manual entry.",
+      "Staff handoffs that require extra messages to understand what happened.",
+    ],
+  }),
+  legalCrmSetup: makeProblemPage({
+    title: "Legal CRM Setup Help",
+    description: "Get legal CRM setup help for law firm intake, follow-up, lead tracking, reminders, handoffs, and cleaner client communication steps.",
+    eyebrow: "Legal CRM setup help",
+    h1: "Legal CRM Setup Help",
+    intro: "A legal CRM should make it easier to see who needs follow-up, what was promised, what is missing, and what should happen next. Many firms still have that work scattered across memory, inboxes, and manual lists.",
+    support: "SHIFT helps small firms review the lead and client path, then identify the setup gaps that create missed follow-up or extra admin work.",
+    problemHeading: "Where legal CRM setup breaks down",
+    bullets: [
+      "New leads come in without a clear owner or next step.",
+      "Consult follow-up depends on manual reminders.",
+      "Statuses do not reflect what is really happening.",
+      "Staff cannot quickly tell what was sent, received, or promised.",
+      "Qualified leads and active clients are mixed together.",
+      "The handoff from lead tracking to matter work is unclear.",
+    ],
+  }),
   audit: {
     title: "Free Law Firm Software Setup Audit | SHIFT Systems",
     description:
@@ -248,6 +507,11 @@ const pages: Record<PageKey, PageData> = {
       { label: "Intake Automation", href: INTAKE_AUTOMATION_PATH },
       { label: "Document Automation", href: DOCUMENT_AUTOMATION_PATH },
       { label: "Workflow Cleanup", href: WORKFLOW_CLEANUP_PATH },
+      { label: "Clio Setup Help", href: CLIO_PATH },
+      { label: "MyCase Setup Help", href: MYCASE_PATH },
+      { label: "Lawmatics Setup Help", href: LAWMATICS_PATH },
+      { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
+      { label: "Legal CRM Setup Help", href: LEGAL_CRM_SETUP_PATH },
       { label: "Client Follow-Up System", href: CLIENT_FOLLOW_UP_PATH },
     ],
     faqs: [
@@ -1221,6 +1485,9 @@ function SiteHeader() {
           </a>
           <a href={PRACTICEPANTHER_PATH} className="hover:text-foreground transition-colors">
             PracticePanther
+          </a>
+          <a href={CLIO_PATH} className="hover:text-foreground transition-colors">
+            Clio
           </a>
           <a href={INTAKE_FOLLOW_UP_PATH} className="hover:text-foreground transition-colors">
             Intake cleanup
