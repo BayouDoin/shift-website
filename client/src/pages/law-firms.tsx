@@ -179,7 +179,7 @@ function makeSoftwareSetupPage(tool: string, toolPath: string, detail: string): 
       },
     ],
     related: [
-      { label: "Book the setup audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Law Firm Software Setup Help", href: HUB_PATH },
       { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
       { label: "Law Firm Intake Automation", href: INTAKE_AUTOMATION_PATH },
@@ -260,7 +260,7 @@ function makeProblemPage(options: {
       },
     ],
     related: [
-      { label: "Book the setup audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
       { label: "Clio Setup Help", href: CLIO_PATH },
       { label: "MyCase Setup Help", href: MYCASE_PATH },
@@ -328,7 +328,7 @@ function makeStatePage(state: string, shortState: string): PageData {
       },
     ],
     related: [
-      { label: "Book the setup audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Law Firm Software Setup Help", href: HUB_PATH },
       { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
       { label: "Clio Setup Help", href: CLIO_PATH },
@@ -608,7 +608,7 @@ const pages: Record<PageKey, PageData> = {
       },
     ],
     related: [
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Law Firm Software Implementation Consultant", href: SOFTWARE_IMPLEMENTATION_PATH },
       { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
       { label: "Legal CRM Setup Help", href: LEGAL_CRM_SETUP_PATH },
@@ -620,7 +620,7 @@ const pages: Record<PageKey, PageData> = {
         heading: "Start here",
         description: "Use these pages when the firm knows the setup is messy but needs help choosing the first cleanup priority.",
         links: [
-          { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+          { label: "Book the audit", href: AUDIT_PATH },
           { label: "Law Firm Software Implementation Consultant", href: SOFTWARE_IMPLEMENTATION_PATH },
           { label: "Practice Management Software Cleanup", href: PMS_CLEANUP_PATH },
           { label: "Legal CRM Setup Help", href: LEGAL_CRM_SETUP_PATH },
@@ -775,7 +775,7 @@ const pages: Record<PageKey, PageData> = {
       },
     ],
     related: [
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Law Firm Software Setup Help", href: HUB_PATH },
       { label: "PracticePanther Workflow Cleanup", href: PP_WORKFLOW_CLEANUP_PATH },
       { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
@@ -871,7 +871,7 @@ const pages: Record<PageKey, PageData> = {
       },
     ],
     related: [
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Law Firm Software Setup Help", href: HUB_PATH },
       { label: "Law Firm Intake Automation", href: INTAKE_AUTOMATION_PATH },
       { label: "Client Follow-Up System", href: CLIENT_FOLLOW_UP_PATH },
@@ -952,7 +952,7 @@ const pages: Record<PageKey, PageData> = {
       },
     ],
     related: [
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
       { label: "Document Automation", href: DOCUMENT_AUTOMATION_PATH },
     ],
@@ -1032,7 +1032,7 @@ const pages: Record<PageKey, PageData> = {
       },
     ],
     related: [
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Law Firm Intake Automation", href: INTAKE_AUTOMATION_PATH },
       { label: "Workflow Cleanup", href: WORKFLOW_CLEANUP_PATH },
     ],
@@ -1111,7 +1111,7 @@ const pages: Record<PageKey, PageData> = {
       },
     ],
     related: [
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
       { label: "Client Follow-Up System", href: CLIENT_FOLLOW_UP_PATH },
       { label: "Document Automation", href: DOCUMENT_AUTOMATION_PATH },
@@ -1190,7 +1190,7 @@ const pages: Record<PageKey, PageData> = {
       },
     ],
     related: [
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
       { label: "Intake + Follow-Up Cleanup", href: INTAKE_FOLLOW_UP_PATH },
       { label: "Workflow Cleanup", href: WORKFLOW_CLEANUP_PATH },
     ],
@@ -1272,7 +1272,7 @@ const pages: Record<PageKey, PageData> = {
       { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
       { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
       { label: "PracticePanther Custom Field Cleanup", href: PP_CUSTOM_FIELD_CLEANUP_PATH },
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
     ],
     faqs: [
       {
@@ -1343,6 +1343,7 @@ const pages: Record<PageKey, PageData> = {
         heading: "Cleaner intake usually means fewer surprises later",
         body: [
           "A better intake setup helps the team see what happened, what is missing, and what needs to happen next without relying on memory.",
+          "The goal is not a longer intake process. It is a cleaner handoff from first contact into matter setup, follow-up, and document prep so the team can trust the next step.",
         ],
       },
     ],
@@ -1350,7 +1351,7 @@ const pages: Record<PageKey, PageData> = {
       { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
       { label: "PracticePanther Workflow Cleanup", href: PP_WORKFLOW_CLEANUP_PATH },
       { label: "PracticePanther Document Automation", href: PP_DOCUMENT_AUTOMATION_PATH },
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
     ],
     faqs: [
       {
@@ -1421,6 +1422,7 @@ const pages: Record<PageKey, PageData> = {
         heading: "The first priority is reliability",
         body: [
           "A document process that saves a few minutes but creates doubt is not clean enough. The audit looks for the setup gaps that keep staff from trusting the output.",
+          "Before deeper automation, the firm needs clean matter information, clear ownership, and a repeatable review path so documents are faster without feeling risky.",
         ],
       },
     ],
@@ -1428,7 +1430,7 @@ const pages: Record<PageKey, PageData> = {
       { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
       { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
       { label: "PracticePanther Custom Field Cleanup", href: PP_CUSTOM_FIELD_CLEANUP_PATH },
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
     ],
     faqs: [
       {
@@ -1499,6 +1501,7 @@ const pages: Record<PageKey, PageData> = {
         heading: "Clean fields make the rest of the system stronger",
         body: [
           "Better fields can make intake easier, follow-up clearer, document prep more reliable, and handoffs less dependent on memory.",
+          "The audit looks for the fields that matter to daily work, then separates useful structure from clutter the team has learned to ignore.",
         ],
       },
     ],
@@ -1506,7 +1509,7 @@ const pages: Record<PageKey, PageData> = {
       { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
       { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
       { label: "PracticePanther Document Automation", href: PP_DOCUMENT_AUTOMATION_PATH },
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
     ],
     faqs: [
       {
@@ -1593,7 +1596,7 @@ const pages: Record<PageKey, PageData> = {
       { label: "PracticePanther Setup Help", href: PRACTICEPANTHER_PATH },
       { label: "PracticePanther Workflow Cleanup", href: PP_WORKFLOW_CLEANUP_PATH },
       { label: "PracticePanther Intake Setup", href: PP_INTAKE_SETUP_PATH },
-      { label: "Free 30-Minute Law Firm Software Setup Audit", href: AUDIT_PATH },
+      { label: "Book the audit", href: AUDIT_PATH },
     ],
     faqs: [
       {
