@@ -439,13 +439,13 @@ const pages: Record<PageKey, PageData> = {
   audit: {
     title: "Free Law Firm Software Setup Audit | SHIFT Systems",
     description:
-      "Book a free 30-minute audit for your law firm software setup. SHIFT helps small firms find what is breaking across intake, follow-up, documents, reminders, and staff handoffs.",
+      "Book a free 30-minute audit for your law firm software setup. Find the intake, follow-up, document, reminder, or handoff problem that should be cleaned up first.",
     eyebrow: "For small law firms using practice management software",
     h1: "Free 30-Minute Law Firm Software Setup Audit",
     intro:
-      "For small law firms using PracticePanther, Clio, MyCase, Smokeball, or similar software, but still dealing with messy intake, missed follow-up, manual documents, or unclear staff handoffs.",
+      "For small law firms using PracticePanther, Clio, MyCase, Lawmatics, Smokeball, Actionstep, or similar software, but still dealing with missed follow-up, manual documents, messy intake, or unclear staff handoffs.",
     support:
-      "In 30 minutes, we look at how your current setup works, where the process is breaking, and what should be cleaned up first.",
+      "In 30 minutes, we look at the way work moves through your firm today and turn the messiest part into a clear first cleanup priority.",
     primaryHref: CALENDLY_URL,
     primaryText: "Book the audit",
     secondaryHref: HUB_PATH,
@@ -469,11 +469,11 @@ const pages: Record<PageKey, PageData> = {
       },
       {
         heading: "What we review during the audit",
-        body: ["We use the call to understand how work currently moves through your firm."],
+        body: ["We use the call to understand how work currently moves through your firm. No long prep form is required."],
         bullets: [
           "The software your firm uses today.",
           "How new leads and clients come in.",
-          "What happens after an intake form or phone call.",
+          "What happens after an intake form, phone call, consult, or missing document.",
           "Where follow-up gets missed or delayed.",
           "How information moves into documents.",
           "How tasks, reminders, and handoffs are handled.",
@@ -486,6 +486,16 @@ const pages: Record<PageKey, PageData> = {
         body: [
           "After the audit, you should have a clearer answer to three questions: where the current setup is breaking, what is causing the most wasted time or missed follow-up, and what should be cleaned up first.",
           "You will not leave with a generic software lecture. You will leave with a plain-English view of what is making the work harder than it needs to be.",
+        ],
+      },
+      {
+        heading: "What happens after you book",
+        bullets: [
+          "You pick a 30-minute time on Ryan's calendar.",
+          "You only need to bring the basics: what software you use and where the process feels messy.",
+          "On the call, we map the path from first contact to the next important work step.",
+          "We identify the friction point that is creating the most missed follow-up, manual checking, or staff confusion.",
+          "You leave with the first cleanup priority, not a pitch to switch software.",
         ],
       },
       {
@@ -1587,7 +1597,7 @@ function SiteHeader() {
           </a>
         </nav>
         <a
-          href={CALENDLY_URL}
+          href={AUDIT_PATH}
           className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
         >
           Book the audit
@@ -1604,7 +1614,7 @@ function FinalCta({ page }: { page: PageData }) {
         <p className="text-sm font-semibold uppercase tracking-[0.24em] opacity-80 mb-4">Free audit</p>
         <h2 className="text-3xl md:text-5xl font-semibold tracking-tight mb-5">Book your free 30-minute audit</h2>
         <p className="text-lg md:text-xl opacity-90 max-w-3xl mb-8">
-          Tell us what software your firm uses and where the process feels messy. We will use the call to look at what is breaking and what should be cleaned up first.
+Start with the audit page. If it is a fit, pick a 30-minute time and bring the messy parts. We will look at what is breaking and what should be cleaned up first.
         </p>
         <a
           href={page.primaryHref}
